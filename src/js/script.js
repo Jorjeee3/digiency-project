@@ -1,13 +1,13 @@
-const testString = 'This is a test!';
+const burgerMenuBtn = document.querySelector('.humburger-menu')
+const headerNav = document.querySelector('.header-nav')
 
-console.log(testString);
+burgerMenuBtn.addEventListener('click', ()=> {
+    headerNav.classList.toggle('active')
+})
 
-const fruits = [
-  'mango',
-  'papaya',
-  'lychee',
-];
-
-fruits.map((fruit) => {
-  console.log(fruit);
+$(document).ready(function(){
+	$('.humburger-menu').click(function(){
+		$(this).toggleClass('open');
+	});
 });
+
