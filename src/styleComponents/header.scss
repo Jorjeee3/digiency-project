@@ -103,45 +103,26 @@
                     @include hamburger-item-transition;
                     display: block;
                     position: absolute;
-                    height: size(3);
+                    height: size(4);
                     width: 100%;
                     background: #373737;
                     border-radius: 0;
                     opacity: 1;
                     left: 0;
-                }
+                }     
 
-                .humburger-item-1 {
-                    top: 0;
+                .humburger-item:first-child {
                     height: size(4);
+                    width: 100%;
+                    background: #373737;
+                    margin-top: size(14);
                 }
 
-                .humburger-item-2 {
-                    top: size(12);
+                .humburger-item:last-child {
                     height: size(4);
-                }
-
-                .humburger-item-3 {
-                    top: size(24);
-                    height: size(4);
-                }        
-            }
-
-            .open {
-
-                .humburger-item-1 {
-                    @include hamburger-item-rotate-1;
-                    top: size(18);
-                }
-
-                .humburger-item-2 {
-                    opacity: 0;
-                    left: size(-60);
-                }   
-
-                .humburger-item-3 {
-                    @include hamburger-item-rotate-3;
-                    top: size(18);
+                    width: 100%;
+                    background: #373737;
+                    margin-top: size(28);
                 }
             }
         }
