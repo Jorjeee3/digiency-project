@@ -105,25 +105,25 @@
                     position: absolute;
                     height: size(4);
                     width: 100%;
-                    background: #373737;
+                    background: $burger-item-color;
                     border-radius: 0;
                     opacity: 1;
                     left: 0;
-                }     
 
-                .humburger-item:first-child {
-                    height: size(4);
-                    width: 100%;
-                    background: #373737;
-                    margin-top: size(14);
-                }
+                    &:first-child {
+                        height: size(4);
+                        width: 100%;
+                        background: $burger-item-color;
+                        margin-top: size(14);
+                    }
 
-                .humburger-item:last-child {
-                    height: size(4);
-                    width: 100%;
-                    background: #373737;
-                    margin-top: size(28);
-                }
+                    &:last-child {
+                        height: size(4);
+                        width: 100%;
+                        background: $burger-item-color;
+                        margin-top: size(28);
+                    }
+                }      
             }
         }
     }
