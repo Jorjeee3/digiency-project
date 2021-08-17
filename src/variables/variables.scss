@@ -1,15 +1,17 @@
+@import "../mixins/mixins.scss";
+
 // --------FONT-SIZE-DESKTOP--------
 
-$font-size-title-one: 3em;
-$font-size-title-two: 2.441em;
-$font-size-title-three: 1em;
-$font-size-paragraph-text: 1em;
-$font-size-menu-item: 1.250em;
-$font-size-button: 1.250em;
+$font-size-title-one: size(48);
+$font-size-title-two: size(39);
+$font-size-title-three: size(16);
+$font-size-paragraph-text: size(16);
+$font-size-menu-item: size(20);
+$font-size-button: size(20);
 
 // --------FONT-SIZE-IPAD-MINI--------
 
-$fz-menu-item-ipad-mini: 1.5em;
+$fz-menu-item-ipad-mini: size(24);
 
 // --------COLORS--------
 

@@ -1,10 +1,11 @@
 @import "../variables/variables.scss";
 @import "../breakpoints/breakpoints.scss";
+@import "../mixins/mixins.scss";
 
 @include media("<=tablet") {
     .header {
         background-color: $color-text-background;
-        padding: 1.625em;
+        padding: size(16);
         z-index: 0;
 
         .header-content {
@@ -14,25 +15,25 @@
             position: relative;
 
             .header-logo {
-                width: 5.75em;
-                height: 1.5em;
+                width: size(92);
+                height: size(24);
             }
 
             .header-nav {
                 position: fixed;
                 top: 0;
-                width: 18.750em;
+                width: size(300);
                 background-color: $color-text-background;
                 height: 100vh;
-                left: -18.750em;
+                left: size(-300);
                 display: block;
                 z-index: 10;
                 transition: all 0.5s ease-out;
 
                 .header-nav-list {
                     width: 100%;
-                    max-width: 12.5em;
-                    padding-top: 6em;
+                    max-width: size(200);
+                    padding-top: size(96);
                     margin: 0 auto;
                     text-align: left;
 
@@ -49,11 +50,11 @@
                         color: #373737;
                         font-size: $fz-menu-item-ipad-mini;
                         font-weight: 500;
-                        border-bottom: 0.125em solid #857777;
+                        border-bottom: size(2) solid #857777;
                     }
                 }
-                
             }
+
             .active {
                 display: block;
                 transform: translate(18.750em ,0);
@@ -69,12 +70,15 @@
             }
 
             .toggle-theme-button {
-                width: 1.375em;
-                height: 1.375em;
+                width: size(22);
+                height: size(22);
                 position: absolute;
                 top: 50%;
                 left: 50%;
                 transform: translate(-50%,-50%);
+                border: 0;
+                background-color: $color-text-background;
+                cursor: pointer;
 
                 .header-icon-light {
                     position: absolute;
@@ -85,80 +89,75 @@
             }      
 
             .humburger-menu {
-                margin-top: 5px;
-                width: 2.250em;
-                height: 2.250em;
+                @include hamburger-transform-rotate;
+                @include hamburger-menu-transition;
+                margin-top: size(5);
+                width: size(36);
+                height: size(36);
                 position: relative;
-                -webkit-transform: rotate(0deg);
-                -moz-transform: rotate(0deg);
-                -o-transform: rotate(0deg);
-                transform: rotate(0deg);
-                -webkit-transition: .5s ease-in-out;
-                -moz-transition: .5s ease-in-out;
-                -o-transition: .5s ease-in-out;
-                transition: .5s ease-in-out;
                 cursor: pointer;
                 background-color: $color-text-background;
 
                 .humburger-item {
+                    @include hamburger-transform-rotate;
+                    @include hamburger-item-transition;
                     display: block;
                     position: absolute;
-                    height: 0.188em;
+                    height: size(3);
                     width: 100%;
                     background: #373737;
                     border-radius: 0;
                     opacity: 1;
                     left: 0;
-                    -webkit-transform: rotate(0deg);
-                    -moz-transform: rotate(0deg);
-                    -o-transform: rotate(0deg);
-                    transform: rotate(0deg);
-                    -webkit-transition: .25s ease-in-out;
-                    -moz-transition: .25s ease-in-out;
-                    -o-transition: .25s ease-in-out;
-                    transition: .25s ease-in-out;
                 }
 
                 .humburger-item-1 {
                     top: 0;
-                    height: 0.25em;
+                    height: size(4);
                 }
 
                 .humburger-item-2 {
-                    top: 0.75em;
-                    height: 0.3em;
+                    top: size(12);
+                    height: size(4);
                 }
 
                 .humburger-item-3 {
-                    top: 1.5em;
-                    height: 0.25em;
+                    top: size(24);
+                    height: size(4);
                 }        
             }
 
             .open {
 
                 .humburger-item-1 {
-                    top: 1.125em;
-                    -webkit-transform: rotate(135deg);
-                    -moz-transform: rotate(135deg);
-                    -o-transform: rotate(135deg);
-                    transform: rotate(135deg);
+                    @include hamburger-item-rotate-1;
+                    top: size(18);
                 }
 
                 .humburger-item-2 {
                     opacity: 0;
-                    left: -3.75em;
+                    left: size(-60);
                 }   
 
                 .humburger-item-3 {
-                    top: 1.125em;
-                    -webkit-transform: rotate(-135deg);
-                    -moz-transform: rotate(-135deg);
-                    -o-transform: rotate(-135deg);
-                    transform: rotate(-135deg);
+                    @include hamburger-item-rotate-3;
+                    top: size(18);
                 }
             }
         }
+    }
+}
+
+@include media("<=phone") {
+    .header {
+
+        .header-content {
+
+            .header-nav {
+                width: size(200);
+                padding-left: size(20);
+            }
+        } 
     }
 }
 
@@ -167,14 +166,14 @@
    .header{
     background-color: $color-text-background;
     display: block;
-    padding: 1.625em;
+    padding: size(26);
 
     .header-logo {
         display: inline-block;
         vertical-align: middle;
-        margin-right: 4.25em;
-        width: 9.875em;
-        height: 2.375em;
+        margin-right: size(68);
+        width: size(158);
+        height: size(38);
     }
 
     .header-nav {
@@ -187,7 +186,7 @@
 
         .header-list-item {
             display: inline-block;
-            margin-right: 2em;
+            margin-right: size(32);
 
             .header-item-link {
                 color: #373737;
@@ -204,10 +203,10 @@
             vertical-align: middle;
             float: right;
             opacity: 1;
-            width: 1.375em;
-            height: 1.375em;
+            width: size(22);
+            height: size(22);
             position: relative;
-            margin-top: 0.375em;
+            margin-top: size(6);
 
             .header-icon-light {
                 opacity: 1;
