@@ -1,6 +1,10 @@
 @import "../styleComponents/header.scss";
+@import "../styleComponents/footer.scss";
 @import "../mixins/mixins.scss";
 
+* {
+  box-sizing: border-box;
+}
 
 body {
   margin: 0;
