@@ -48,3 +48,59 @@ exports.default = series(
   browsersyncServe,
   watchTask
 );
+
+let gulp = require('gulp'); 
+let svgSprite = require('gulp-svg-sprite');
+
+gulp.task('svgSprite', function () {
+  return gulp.src('static/icons/footer-icons/*.svg')
+    .pipe(svgSprite({
+      mode: {
+        stack: {
+          sprite: "../facebook.svg",
+          sprite: "../instagram.svg",
+          sprite: "../twitter.svg",
+          sprite: "../footer-logo.svg",
+          sprite: "../newsletter.svg",
+          sprite: "../arrow-top.svg",
+          sprite: "../skype.svg",
+        },
+        mode: {
+          view: { 
+            bust: false,
+            render: {
+              scss: true 
+            }
+          },
+          symbol: true
+        }
+      }
+    }))
+    .pipe(gulp.dest('static/sprite/icons/footer-icons/'));
+}); 
+
+config = {
+    shape: {
+      dimension: { // Set maximum dimensions
+        maxWidth: 32,
+        maxHeight: 32
+      },
+      spacing: { // Add padding
+        padding: 10
+      },
+      dest: 'out/intermediate-svg' // Keep the intermediate files
+    },
+    mode: {
+      view: { 
+        bust: false,
+        render: {
+          scss: true 
+        }
+      },
+      symbol: true 
+    }
+};
+  
+gulp.src('**/*.svg', { cwd: 'path/to/static' })
+  .pipe(svgSprite(config))
+  .pipe(gulp.dest('staticc'));
