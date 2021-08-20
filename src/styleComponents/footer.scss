@@ -11,16 +11,14 @@
         padding-top: size(50) ;
 
         .footer-list {
-            padding: size(22);
+            padding: size(18);
 
             .footer-item {
                 display: block;
                 margin-bottom: size(50);
                 
                 .footer-title-icon {
-                    display: block;
-                    width: size(143);
-                    height: size(39);
+                    width: size(146);
                     margin-bottom: size(18);
                 }
 
@@ -33,6 +31,7 @@
                 .footer-title {
                     font-size: $fs-title-phone-desktop;
                     margin-bottom: size(18);
+                    font-weight: 600;
                 }
 
                 .footer-media-list {
@@ -54,6 +53,10 @@
                             top: 50%;
                             left: 50%;
                             transform: translate(-50%,-45%);
+
+                            .media-icon {
+                                width: size(100);
+                            }
                         }
                     }
                 }
@@ -107,6 +110,15 @@
                         display: inline-block;
                         width: 20%;
                         height: size(60);
+                        position: relative;
+
+                        .newsletter-icon {
+                            width: size(100);
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%,-50%);
+                        }
                     }
                 }
             }
@@ -117,7 +129,7 @@
             padding: size(18) size(6);
             text-align: center;
 
-            .arrow-top {
+            .arrow-top-button {
                 display: none;
             }
         }
@@ -160,6 +172,7 @@
                 .footer-title {
                     font-size: $fz-title-ipad-mini;
                     margin-bottom: size(18);
+                    font-weight: 600;
 
                     &:last-child {
                         display: block;
@@ -186,6 +199,10 @@
                             top: 50%;
                             left: 50%;
                             transform: translate(-50%,-45%);
+
+                            .media-icon {
+                                width: size(80);
+                            }
                         }
                     }
                 }
@@ -239,6 +256,15 @@
                         display: inline-block;
                         width: 20%;
                         height: size(40);
+                        position: relative;
+
+                        .newsletter-icon {
+                            width: size(80);
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%,-50%);
+                        }
                     }
                 }
             }
@@ -249,7 +275,7 @@
             padding: size(18) 0;
             text-align: center;
 
-            .arrow-top {
+            .arrow-top-button {
                 display: none;
             }
         }  
@@ -273,9 +299,8 @@
                 
                 .footer-title-icon {
                     display: block;
-                    margin-bottom: size(25);
-                    width: size(152);
-                    height: size(38);
+                    margin: size(4) 0 size(25);
+                    width: size(134);
                 }
 
                 .footer-digiency-text {
@@ -287,6 +312,7 @@
                 .footer-title {
                     font-size: $fs-title-phone-desktop;
                     margin-bottom: size(28);
+                    font-weight: 600;
 
                     &:last-child {
                         display: block;
@@ -314,7 +340,7 @@
                             left: 50%;
                             transform: translate(-50%,-45%);
 
-                            .icon {
+                            .media-icon {
                                 width: size(100);
                             }
                         }
@@ -347,7 +373,7 @@
 
                 .footer-newsletter-text {
                     display: block;
-                    margin-bottom: size(15);
+                    margin-bottom: size(16);
                     line-height: size(22);
                 }
 
@@ -370,6 +396,15 @@
                         display: inline-block;
                         width: 20%;
                         height: size(60);
+                        position: relative;
+
+                        .newsletter-icon {
+                            width: size(100);
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%,-50%);
+                        }
                     }
                 }
             }
@@ -383,10 +418,15 @@
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-                .arrow-top {
+
+                .arrow-top-button {
                     display: block;
                     background-color: $orange-color;
 
+                    .arrow-top-icon {
+                        width: size(120);
+                        transform: translate(40%, 0);
+                    }
                 }
             }
         }

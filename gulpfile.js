@@ -64,6 +64,7 @@ gulp.task('svgSprite', function () {
           sprite: "../newsletter.svg",
           sprite: "../arrow-top.svg",
           sprite: "../skype.svg",
+          sprite: "../footer-logo.svg"
         },
         mode: {
           view: { 
@@ -103,4 +104,4 @@ config = {
   
 gulp.src('**/*.svg', { cwd: 'path/to/static' })
   .pipe(svgSprite(config))
-  .pipe(gulp.dest('staticc'));
+  .pipe(gulp.dest('static'));
