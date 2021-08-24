@@ -1,0 +1,21 @@
+@import "../mixins/mixins.scss";
+
+// --------FONT-SIZE-DESKTOP--------
+
+$font-size-title-one: size(48);
+$font-size-title-two: size(39);
+$font-size-title-three: size(16);
+$font-size-paragraph-text: size(16);
+$font-size-menu-item: size(20);
+$font-size-button: size(20);
+
+// --------FONT-SIZE-IPAD-MINI--------
+
+$fz-menu-item-ipad-mini: size(16);
+
+// --------COLORS--------
+
+$color-text-background: #fff;
+$primary-color: #FF5300;
+$paragraph-text-color: #7B7B7B;
+$burger-item-color: #373737;

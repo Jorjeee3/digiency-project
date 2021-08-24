@@ -5,14 +5,73 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Gulp Browsersync</title>
-  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="dist/style.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="dist/normalize.css">
+  <link rel="stylesheet" href="dist/style.css?v=2">
 </head>
 <body>
 
-  
-  
+  <header class="header">
+    <div class="container">
+      <div class="header-content">
+        <img 
+          src="static/icons/header-icons/header-logo-light.svg" 
+          alt="header logo" 
+          class="header-logo"
+        >
+        <nav class="header-nav">
+          <ul class="header-nav-list">
+            <li class="header-list-item">
+              <a href="#" class="header-item-link">
+                Home 
+              </a>
+            </li>
+            <li class="header-list-item">
+              <a href="#" class="header-item-link">
+                About Us 
+              </a>
+            </li>
+            <li class="header-list-item">
+              <a href="#" class="header-item-link">
+                Our Work 
+              </a>
+            </li>
+            <li class="header-list-item">
+              <a href="#" class="header-item-link">
+                Clients 
+              </a>
+            </li>
+            <li class="header-list-item">
+              <a href="#" class="header-item-link">
+                Our Blog
+              </a>
+            </li>
+            <li class="header-list-item">
+              <a href="#" class="header-item-link">
+                Contact Us 
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <button class="toggle-theme-button">
+          <img 
+            src="static/icons/header-icons/sun-light.svg" 
+            alt="sun light theme" 
+            class="header-icon-light"
+          >
+        </button>
+        <div class="humburger-menu">
+          <span class="humburger-item"></span>
+          <span class="humburger-item"></span>
+          <span class="humburger-item"></span>
+        </div>
+      </div>
+    </div>
+  </header>
+
   <script src="/dist/script.js"></script>
 </body>
 </html>
