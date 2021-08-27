@@ -1,0 +1,239 @@
+@import "../variables/variables.scss";
+@import "../breakpoints/breakpoints.scss";
+@import "../mixins/mixins.scss";
+
+.slick-list {
+    padding: size(4) 0;
+}
+
+.slide {
+  padding: 0 size(16); 
+  height: auto;
+}   
+
+.people-item {
+    padding-bottom: size(20);
+    background-color: #fff;
+}
+
+
+.person-photo-wrapper {
+    width: 100%;
+    margin-bottom: size(24);
+    position: relative;
+    padding-bottom: 92.6%;
+}
+    
+.person-photo {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;    
+}
+
+@include media("<=tablet") {
+  .people-section {
+    background-color: $white-color;
+    padding: size(50) 0;
+
+    .people-content {
+      text-align: center;
+
+      .section-little-title {
+        margin-bottom: size(18);
+      }
+
+      .expereince-title {
+        margin-bottom: size(18);
+      }
+
+      .people-slider {
+        .people-list {
+          .people-item {
+            box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
+
+            .person-photo-wrapper {
+
+              .people-media-list {
+                display: none;
+                position: absolute;
+                top: size(28);
+                right: 0;
+
+                .person-media-item {
+                  background-color: $white-color;
+                  width: size(40);
+                  height: size(40);
+                  margin-bottom: size(5);
+                }
+              }
+              &:hover {
+                .people-media-list {
+                  display: block;
+
+                  .person-media-item {
+                    &:hover {
+                      background-color: $orange-color;
+                    }
+                  }
+                }
+              }
+            }
+
+            .person-name {
+              display: block;
+              font-size: $font-size-menu-item;
+              margin-bottom: size(12);
+              font-weight: 500;
+            }
+
+            .person-profession {
+              display: block;
+              font-size: $font-size-paragraph-text;
+              color: $light-grey-color;
+              font-weight: 400;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@include media(">=tablet", "<=desktop") {
+  .people-section {
+    background-color: $white-color;
+    padding: size(120) 0;
+
+    .people-content {
+      text-align: center;
+
+      .section-little-title {
+        margin-bottom: size(18);
+      }
+
+      .expereince-title {
+        margin-bottom: size(60);
+        font-size: $fs-title-phone-desktop;
+      }
+
+      .people-list {
+        .people-item {
+          box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
+
+          .person-photo-wrapper {
+
+            .people-media-list {
+              display: none;
+              position: absolute;
+              top: size(28);
+              right: 0;
+
+              .person-media-item {
+                background-color: $white-color;
+                width: size(40);
+                height: size(40);
+                margin-bottom: size(5);
+              }
+            }
+
+            &:hover {
+              .people-media-list {
+                display: block;
+
+                .person-media-item {
+                  &:hover {
+                    background-color: $orange-color;
+                  }
+                }
+              }
+            }
+          }
+
+          .person-name {
+            display: block;
+            font-size: $font-size-menu-item;
+            margin-bottom: size(12);
+            font-weight: 500;
+          }
+
+          .person-profession {
+            display: block;
+            font-size: $font-size-paragraph-text;
+            color: $light-grey-color;
+            font-weight: 400;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include media(">=desktop") {
+  .people-section {
+    background-color: $white-color;
+    padding: size(120) 0;
+
+    .people-content {
+      text-align: center;
+
+      .section-little-title {
+        margin-bottom: size(24);
+      }
+
+      .expereince-title {
+        margin-bottom: size(60);
+        font-size: $font-size-title-two;
+      }
+
+      .people-list {
+        .people-item {
+          box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
+
+          .person-photo-wrapper {
+            .people-media-list {
+              display: none;
+              position: absolute;
+              top: size(28);
+              right: 0;
+
+              .person-media-item {
+                background-color: $white-color;
+                width: size(40);
+                height: size(40);
+                margin-bottom: size(5);
+              }
+            }
+            &:hover {
+              .people-media-list {
+                display: block;
+
+                .person-media-item {
+                  &:hover {
+                    background-color: $orange-color;
+                  }
+                }
+              }
+            }
+          }
+
+          .person-name {
+            display: block;
+            font-size: $font-size-menu-item;
+            margin-bottom: size(12);
+            font-weight: 500;
+          }
+
+          .person-profession {
+            display: block;
+            font-size: $font-size-paragraph-text;
+            color: $light-grey-color;
+            font-weight: 400;
+          }
+        }
+      }
+    }
+  }
+}
