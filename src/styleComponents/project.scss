@@ -1,0 +1,321 @@
+@import "../variables/variables.scss";
+@import "../breakpoints/breakpoints.scss";
+@import "../mixins/mixins.scss";
+
+@include media("<=tablet") {
+    .project-section {
+        margin-bottom: size(120);
+
+        .project-content {
+            text-align: center;
+
+            .section-little-title {
+                margin-bottom: size(18);
+            }
+
+            .project-title {
+                font-size: $fs-title-phone-desktop;
+                margin-bottom: size(25);
+            }
+
+            .project-tabs {
+                margin-bottom: size(50);
+
+                .project-button-tab {
+                    background-color: $white-color;
+                    padding: 0;
+
+                    .project-tab {
+                        font-size: $font-size-title-three;
+                        color: $light-grey-color;
+                        font-weight: 400;
+
+                    }
+
+                    &:hover {
+                        .project-tab {
+                            font-size: $font-size-title-three;
+                            color: $orange-color;
+                            font-weight: 400;
+                        }
+                    }
+                }
+
+                .project-button-tab + .project-button-tab {
+                    margin-left: size(18);
+                }
+            }
+
+            .project-list {
+                display: grid;
+                grid-template-columns: repeat(1, 340px);
+                grid-template-rows: repeat(1, 370px);
+                grid-gap: size(24);
+                justify-content: center;
+
+                .project-item {
+                    padding: 0;
+                    position: relative;
+
+                    .wrapper-project-image {
+                        width: 100%;
+                        height: 100%;
+                        position: absolute;
+                        padding-top: size(112);
+                        top: 0;
+                        left: 0;
+                        z-index: 10;
+                        color: $white-color;
+
+                        .project-item-title {
+                            font-weight: 500;
+                            font-size: $fz-title-ipad-mini;
+                            opacity: 0;
+                            margin-bottom: size(18);
+                        }
+    
+                        .project-item-product {
+                            font-weight: 400;
+                            font-size: $font-size-title-three;
+                            opacity: 0;
+                        }
+
+                        &:hover {
+                            background-color: $orange-opasity-color;
+                            
+                            .project-item-title {
+                                font-weight: 500;
+                                font-size: $fz-title-ipad-mini;
+                                opacity: 1;
+                            }
+    
+                            .project-item-product {
+                                font-weight: 400;
+                                font-size: $font-size-title-three;
+                                opacity: 1;
+                            }
+                        }
+                    }
+
+                    .project-item-image {
+                        width: 100%;
+                        height: 100%;
+                        z-index: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media(">=tablet", "<=desktop") {
+
+    .project-section {
+        margin-bottom: size(120);
+
+        .project-content {
+            text-align: center;
+
+            .section-little-title {
+                margin-bottom: size(18);
+            }
+
+            .project-title {
+                font-size: $fs-title-phone-desktop;
+                margin-bottom: size(25);
+            }
+
+            .project-tabs {
+                margin-bottom: size(60);
+
+                .project-button-tab {
+                    background-color: $white-color;
+
+                    .project-tab {
+                        font-size: $font-size-button;
+                        color: $light-grey-color;
+                        font-weight: 500;
+
+                    }
+
+                    &:hover {
+                        .project-tab {
+                            font-size: $font-size-button;
+                            color: $orange-color;
+                            font-weight: 500;
+                        }
+                    }
+                }
+
+                .project-button-tab + .project-button-tab {
+                    margin-left: size(42);
+                }
+            }
+
+            .project-list {
+                display: grid;
+                grid-template-columns: repeat(3, 220px);
+                grid-template-rows: repeat(2, 230px);
+                grid-gap: size(24);
+                justify-content: center;
+
+                .project-item {
+                    padding: 0;
+                    position: relative;
+
+                    .wrapper-project-image {
+                        width: 100%;
+                        height: 100%;
+                        position: absolute;
+                        padding-top: size(112);
+                        top: 0;
+                        left: 0;
+                        z-index: 10;
+                        color: $white-color;
+
+                        .project-item-title {
+                            font-weight: 500;
+                            font-size: $fz-title-ipad-mini;
+                            opacity: 0;
+                            margin-bottom: size(18);
+                        }
+    
+                        .project-item-product {
+                            font-weight: 400;
+                            font-size: $font-size-title-three;
+                            opacity: 0;
+                        }
+
+                        &:hover {
+                            background-color: $orange-opasity-color;
+                            
+                            .project-item-title {
+                                font-weight: 500;
+                                font-size: $fz-title-ipad-mini;
+                                opacity: 1;
+                            }
+    
+                            .project-item-product {
+                                font-weight: 400;
+                                font-size: $font-size-title-three;
+                                opacity: 1;
+                            }
+                        }
+                    }
+
+                    .project-item-image {
+                        width: 100%;
+                        height: 100%;
+                        z-index: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media(">=desktop") {
+
+    .project-section {
+        margin-bottom: size(120);
+
+        .project-content {
+            text-align: center;
+
+            .section-little-title {
+                margin-bottom: size(25);
+            }
+
+            .project-title {
+                margin-bottom: size(25);
+                font-size: $font-size-title-two;
+            }
+
+            .project-tabs {
+                margin-bottom: size(60);
+
+                .project-button-tab {
+                    background-color: $white-color;
+
+                    .project-tab {
+                        font-size: $font-size-button;
+                        color: $light-grey-color;
+                        font-weight: 500;
+
+                    }
+
+                    &:hover {
+                        .project-tab {
+                            font-size: $font-size-button;
+                            color: $orange-color;
+                            font-weight: 500;
+                        }
+                    }
+                }
+
+                .project-button-tab + .project-button-tab {
+                    margin-left: size(42);
+                }
+            }
+
+            .project-list {
+                display: grid;
+                grid-template-columns: repeat(3, 370px);
+                grid-template-rows: repeat(2, 370px);
+                grid-gap: size(24);
+                justify-content: center;
+
+                .project-item {
+                    padding: 0;
+                    position: relative;
+
+                    .wrapper-project-image {
+                        width: 100%;
+                        height: 100%;
+                        position: absolute;
+                        padding-top: size(250);
+                        top: 0;
+                        left: 0;
+                        z-index: 10;
+                        color: $white-color;
+
+                        .project-item-title {
+                            font-weight: 500;
+                            font-size: $fz-title-ipad-mini;
+                            opacity: 0;
+                            margin-bottom: size(18);
+                        }
+    
+                        .project-item-product {
+                            font-weight: 400;
+                            font-size: $font-size-title-three;
+                            opacity: 0;
+                        }
+
+                        &:hover {
+                            background-color: $orange-opasity-color;
+                            
+                            .project-item-title {
+                                font-weight: 500;
+                                font-size: $fz-title-ipad-mini;
+                                opacity: 1;
+                            }
+    
+                            .project-item-product {
+                                font-weight: 400;
+                                font-size: $font-size-title-three;
+                                opacity: 1;
+                            }
+                        }
+                    }
+
+                    .project-item-image {
+                        width: 100%;
+                        height: 100%;
+                        z-index: 0;
+                    }
+                }
+            }
+        }
+    }
+}
