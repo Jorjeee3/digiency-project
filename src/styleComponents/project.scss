@@ -19,29 +19,30 @@
             }
 
             .project-tabs {
-                margin-bottom: size(60);
+                margin-bottom: size(50);
 
                 .project-button-tab {
                     background-color: $white-color;
+                    padding: 0;
 
                     .project-tab {
-                        font-size: $font-size-button;
+                        font-size: $font-size-title-three;
                         color: $light-grey-color;
-                        font-weight: 500;
+                        font-weight: 400;
 
                     }
 
                     &:hover {
                         .project-tab {
-                            font-size: $font-size-button;
+                            font-size: $font-size-title-three;
                             color: $orange-color;
-                            font-weight: 500;
+                            font-weight: 400;
                         }
                     }
                 }
 
                 .project-button-tab + .project-button-tab {
-                    margin-left: size(42);
+                    margin-left: size(18);
                 }
             }
 
