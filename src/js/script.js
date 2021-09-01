@@ -132,6 +132,33 @@ $(document).ready(function () {
 	});
 })
 
+$(document).ready(function () {
+	$('.blog-slider-list').slick({
+		dots: true,
+		infinite: false,
+		speed: 300,
+		buttons: false,
+		prevArrow: false,
+		nextArrow: false,
+		slidesToShow: 2,
+		slidesToScroll: 1,
+		responsive: [
+			{
+				breakpoint: 650,
+				settings: {
+					slidesToShow: 1
+				}
+			},
+			{
+				breakpoint: 480,
+				settings: {
+					slidesToShow: 1
+				}
+			}
+		]
+	});
+})
+
 
 
 
