@@ -32,7 +32,7 @@
                             max-width: size(300);
                             height: auto;
                             margin: 0 auto;
-                            box-shadow: 0px 0px 10px 0px rgba(34, 60, 80, 0.2);
+                            box-shadow: 0 0 size(10) 0 rgba(34, 60, 80, 0.2);
                             padding: size(18);
 
                             .blog-item-content {
@@ -151,7 +151,7 @@
                             max-width: size(300);
                             height: auto;
                             margin: 0 auto;
-                            box-shadow: 0px 0px 10px 0px rgba(34, 60, 80, 0.2);
+                            box-shadow: 0 0 size(10) 0 rgba(34, 60, 80, 0.2);
                             padding: size(18);
 
                             .blog-item-content {
@@ -269,7 +269,7 @@
                             width: 100%;
                             max-width: size(332);
                             height: auto;
-                            box-shadow: 0px 0px 10px 0px rgba(34, 60, 80, 0.2);
+                            box-shadow: 0 0 size(10) 0 rgba(34, 60, 80, 0.2);
                             padding: size(18);
 
                             .blog-item-content {
@@ -384,7 +384,7 @@
                         .blog-slider-item {
                             width: 100%;
                             max-width: size(570);
-                            box-shadow: 0px 0px 10px 0px rgba(34, 60, 80, 0.2);
+                            box-shadow: 0 0 size(10) 0 rgba(34, 60, 80, 0.2);
                             padding: size(25);
 
                             .blog-item-content {
