@@ -1,0 +1,50 @@
+@import "../variables/variables.scss";
+@import "../breakpoints/breakpoints.scss";
+@import "../mixins/mixins.scss";
+
+@include media("<=phone") {
+
+}
+
+
+@include media(">=phone", "<=tablet") {
+    .map-section {
+        padding: 0 size(160);
+        .map-content {
+            width: 100%;    
+            padding: 0 size(160);
+
+            .map {
+                width: 100%;
+                max-width: size(1170);
+                height: size(450);
+            }
+        }
+    }
+}
+
+
+@include media(">=desktop") {
+    .map-section {
+        padding: 0 size(160);
+        .map-content {
+            width: 100%;    
+            padding: 0 size(160);
+
+            .map {
+                width: 100%;
+                max-width: size(1170);
+                height: size(450);
+                margin: size(16);
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
