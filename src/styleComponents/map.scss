@@ -1,0 +1,61 @@
+@import "../variables/variables.scss";
+@import "../breakpoints/breakpoints.scss";
+@import "../mixins/mixins.scss";
+
+
+.map-section {
+    text-align: center;
+    padding: 0 size(16);
+
+    .map-content {
+        width: 100%;
+    }
+}
+
+@include media("<=phone") {
+    .map-section {
+        .map-content {
+            .map {
+                width: 100%;
+                max-width: size(344);
+                height: size(250);
+                margin: 0 auto;
+            }
+        }
+    }
+}
+
+
+@include media(">=phone", "<=tablet") {
+    .map-section {
+        .map-content {
+            .map {
+                width: 100%;
+                max-width: size(688);
+                height: size(250);
+                margin: 0 auto;
+            }
+        }
+    }
+}
+
+
+@include media(">=desktop") {
+    .map-section {
+        .map-content {
+            .map {
+                width: 100%;
+                max-width: size(1170);
+                height: size(450);
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
