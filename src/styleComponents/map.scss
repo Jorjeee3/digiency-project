@@ -2,22 +2,38 @@
 @import "../breakpoints/breakpoints.scss";
 @import "../mixins/mixins.scss";
 
-@include media("<=phone") {
 
+.map-section {
+    text-align: center;
+    padding: 0 size(16);
+
+    .map-content {
+        width: 100%;
+    }
+}
+
+@include media("<=phone") {
+    .map-section {
+        .map-content {
+            .map {
+                width: 100%;
+                max-width: size(344);
+                height: size(250);
+                margin: 0 auto;
+            }
+        }
+    }
 }
 
 
 @include media(">=phone", "<=tablet") {
     .map-section {
-        padding: 0 size(160);
         .map-content {
-            width: 100%;    
-            padding: 0 size(160);
-
             .map {
                 width: 100%;
-                max-width: size(1170);
-                height: size(450);
+                max-width: size(688);
+                height: size(250);
+                margin: 0 auto;
             }
         }
     }
@@ -26,16 +42,11 @@
 
 @include media(">=desktop") {
     .map-section {
-        padding: 0 size(160);
         .map-content {
-            width: 100%;    
-            padding: 0 size(160);
-
             .map {
                 width: 100%;
                 max-width: size(1170);
                 height: size(450);
-                margin: size(16);
             }
         }
     }
