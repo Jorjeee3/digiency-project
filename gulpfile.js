@@ -4,6 +4,8 @@ const postcss = require('gulp-postcss');
 const cssnano = require('cssnano');
 const terser = require('gulp-terser');
 const browsersync = require('browser-sync').create();
+let gulp = require('gulp'); 
+let svgSprite = require('gulp-svg-sprite');
 
 // Sass Task
 function scssTask(){
@@ -30,7 +32,17 @@ function browsersyncServe(cb){
   cb();
 }
 
-function browsersyncReload(cb){
+async function browsersyncReload(cb) {
+  await gulp.src('./static/icons/*.svg')
+    .pipe(svgSprite({
+      mode: {
+        stack: {
+          sprite: "./sprite.svg"
+        }
+      }
+    }))
+    .pipe(gulp.dest('./static/sprite'));
+  
   browsersync.reload();
   cb();
 }
@@ -38,7 +50,7 @@ function browsersyncReload(cb){
 // Watch Task
 function watchTask(){
   watch('*.html', browsersyncReload);
-  watch(['src/scss/**/*.scss','src/styleComponents/**/*.scss', 'src/js/**/*.js'], series(scssTask, jsTask, browsersyncReload));
+  watch(['src/scss/**/*.scss','src/styleComponents/**/*.scss', 'src/js/**/*.js', 'static/icons/*.svg'], series(scssTask, jsTask, browsersyncReload));
 }
 
 // Default Gulp task
@@ -49,27 +61,17 @@ exports.default = series(
   watchTask
 );
 
-let gulp = require('gulp'); 
-let svgSprite = require('gulp-svg-sprite');
-
-gulp.task('svgSprite', function () {
-  return gulp.src('static/icons/*.svg')
-    .pipe(svgSprite({
-      mode: {
-        stack: {
-          sprite: "../facebook.svg"
-        },
-        view: { 
-          bust: false,
-          render: {
-            scss: true 
-          }
-        },
-        symbol: true
-      }
-    }))
-    .pipe(gulp.dest('static/sprite/icons'));
-}); 
+// gulp.task('svg-sprite', function () {
+// return gulp.src('./static/icons/*.svg')
+//     .pipe(svgSprite({
+//       mode: {
+//         stack: {
+//           sprite: "./sprite.svg"
+//         }
+//       }
+//     }))
+//     .pipe(gulp.dest('./static/sprite'));
+// }); 
 
 config = {
     shape: {
@@ -92,10 +94,3 @@ config = {
       symbol: true 
     }
 };
-  
-gulp.src('**/*.svg', { cwd: 'path/to/static' })
-  .pipe(svgSprite(config))
-  .on('error', function(error) {
-    /* Do some awesome error handling ... */
-  })
-  .pipe(gulp.dest('sprite'));
