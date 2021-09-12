@@ -1,4 +1,4 @@
-@import "src/jquery/slick/slick.scss";
+@import "src/slick/slick.scss";
 @import "../styleComponents/header.scss";
 @import "../styleComponents/footer.scss";
 @import "../styleComponents/hero.scss";
@@ -6,6 +6,8 @@
 @import "../styleComponents/expereince.scss";
 @import "../styleComponents/people.scss";
 @import "../styleComponents/project.scss";
+@import "../styleComponents/feedback.scss";
+@import "../styleComponents/blog.scss";
 @import "../mixins/mixins.scss";
 
 * {
