@@ -1,0 +1,88 @@
+@import "../variables/variables.scss";
+@import "../breakpoints/breakpoints.scss";
+@import "../mixins/mixins.scss";
+
+
+@include media("<=phone") {
+    .brands-section {
+        margin: size(50) 0;
+
+        .brands-content {
+            .brands-list {
+                display: flex; 
+                justify-content: space-around;
+                align-items: center;
+
+                .brand-item {
+                    .brand-image {
+                        max-width: size(70);
+                        height: size(50);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media(">=phone" , "<=tablet") {
+    .brands-section {
+        margin: size(50) 0;
+
+        .brands-content {
+            .brands-list {
+                display: flex; 
+                justify-content: space-around;
+                align-items: center;
+
+                .brand-item {
+                    .brand-image {
+                        max-width: size(70);
+                        height: size(50);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media(">=tablet", "<=desktop") {
+    .brands-section {
+        margin: size(120) 0;
+
+        .brands-content {
+            .brands-list {
+                display: flex; 
+                justify-content: space-around;
+                align-items: center;
+
+                .brand-item {
+                    .brand-image {
+                        max-width: size(138);
+                        height: size(108);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media(">=desktop") {
+    .brands-section {
+        margin: size(124) 0;
+
+        .brands-content {
+            .brands-list {
+                display: flex; 
+                justify-content: space-between;
+                align-items: center;
+
+                .brand-item {
+                    .brand-image {
+                        max-width: size(212);
+                        height: size(168);
+                    }
+                }
+            }
+        }
+    }
+}
