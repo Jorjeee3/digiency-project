@@ -1,5 +1,7 @@
 const burgerMenuBtn = document.querySelector('.humburger-menu')
 const headerNav = document.querySelector('.header-nav')
+const toggleThemeButton = document.querySelector('.header-icon-light')
+const body = document.querySelector('body')
 
 burgerMenuBtn.addEventListener('click', () => {
 	headerNav.classList.toggle('active'),
@@ -160,8 +162,7 @@ $(document).ready(function () {
 })
 
 
-
-
-
-
+toggleThemeButton.addEventListener('click', () => {
+	body.classList.toggle('dark-theme')
+})
 

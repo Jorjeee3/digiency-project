@@ -11,6 +11,7 @@
 @import "../styleComponents/contact.scss";
 @import "../styleComponents/brands.scss";
 @import "../styleComponents/map.scss";
+@import "../styleComponents/dark-theme.scss";
 @import "../mixins/mixins.scss";
 
 * {
@@ -21,6 +22,15 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Work Sans', sans-serif;
+}
+
+.dark-theme {
+  $white-color: rgb(196, 105, 105);
+  $orange-color: #693116;
+  $orange-opasity-color: #28c4b7e6;
+  $light-grey-color: #cc2586;
+  $dark-grey-color: #6730e9;
+  $skin-color: #161414;
 }
 
 .container {
