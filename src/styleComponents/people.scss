@@ -3,39 +3,38 @@
 @import "../mixins/mixins.scss";
 
 .slick-list {
-    padding: size(4) 0;
+  padding: size(4) 0;
 }
 
 .slide {
-  padding: 0 size(16); 
+  padding: 0 size(16);
   height: auto;
-}   
+}
 
 .people-item {
-    padding-bottom: size(20);
-    background-color: #fff;
+  padding-bottom: size(20);
+  background-color: #fff;
 }
-
 
 .person-photo-wrapper {
-    width: 100%;
-    margin-bottom: size(24);
-    position: relative;
-    padding-bottom: 92.6%;
+  width: 100%;
+  margin-bottom: size(24);
+  position: relative;
+  padding-bottom: 92.6%;
 }
-    
+
 .person-photo {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    position: absolute;
-    top: 0;
-    left: 0;    
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 @include media("<=tablet") {
   .people-section {
-    background-color: $white-color;
+    background-color: $color-background-primary;
     padding: size(50) 0;
 
     .people-content {
@@ -55,7 +54,6 @@
             box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
 
             .person-photo-wrapper {
-
               .people-media-list {
                 display: none;
                 position: absolute;
@@ -63,7 +61,7 @@
                 right: 0;
 
                 .person-media-item {
-                  background-color: $white-color;
+                  background-color: $color-background-primary;
                   width: size(40);
                   height: size(40);
                   margin-bottom: size(5);
@@ -75,7 +73,7 @@
 
                   .person-media-item {
                     &:hover {
-                      background-color: $orange-color;
+                      background-color: $color-accent;
                     }
                   }
                 }
@@ -92,7 +90,7 @@
             .person-profession {
               display: block;
               font-size: $font-size-paragraph-text;
-              color: $light-grey-color;
+              color: $color-text-secondary;
               font-weight: 400;
             }
           }
@@ -104,7 +102,7 @@
 
 @include media(">=tablet", "<=desktop") {
   .people-section {
-    background-color: $white-color;
+    background-color: $color-background-primary;
     padding: size(120) 0;
 
     .people-content {
@@ -124,7 +122,6 @@
           box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
 
           .person-photo-wrapper {
-
             .people-media-list {
               display: none;
               position: absolute;
@@ -132,7 +129,7 @@
               right: 0;
 
               .person-media-item {
-                background-color: $white-color;
+                background-color: $color-background-primary;
                 width: size(40);
                 height: size(40);
                 margin-bottom: size(5);
@@ -145,7 +142,7 @@
 
                 .person-media-item {
                   &:hover {
-                    background-color: $orange-color;
+                    background-color: $color-accent;
                   }
                 }
               }
@@ -162,7 +159,7 @@
           .person-profession {
             display: block;
             font-size: $font-size-paragraph-text;
-            color: $light-grey-color;
+            color: $color-text-secondary;
             font-weight: 400;
           }
         }
@@ -173,7 +170,7 @@
 
 @include media(">=desktop") {
   .people-section {
-    background-color: $white-color;
+    background-color: $color-background-primary;
     padding: size(120) 0;
 
     .people-content {
@@ -200,7 +197,7 @@
               right: 0;
 
               .person-media-item {
-                background-color: $white-color;
+                background-color: $color-background-primary;
                 width: size(40);
                 height: size(40);
                 margin-bottom: size(5);
@@ -212,7 +209,7 @@
 
                 .person-media-item {
                   &:hover {
-                    background-color: $orange-color;
+                    background-color: $color-accent;
                   }
                 }
               }
@@ -229,7 +226,7 @@
           .person-profession {
             display: block;
             font-size: $font-size-paragraph-text;
-            color: $light-grey-color;
+            color: $color-text-secondary;
             font-weight: 400;
           }
         }

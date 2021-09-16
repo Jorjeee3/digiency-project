@@ -3,222 +3,220 @@
 @import "../mixins/mixins.scss";
 
 @include media("<=tablet") {
-    .expereince-section {
-        background-color: $skin-color;
-        padding: size(50) size(16);
+  .expereince-section {
+    background-color: $color-background-secondary;
+    padding: size(50) size(16);
 
-        .expereince-wrapper {
-            .expereince-content {
-                text-align: center;
-                margin-bottom: size(50);
+    .expereince-wrapper {
+      .expereince-content {
+        text-align: center;
+        margin-bottom: size(50);
 
-                .section-little-title {
-                    margin-bottom: size(18);
-                }
-
-                .expereince-title {
-                    font-size: $fz-title-ipad-mini;
-                    margin-bottom: size(18);
-                    font-weight: 500;
-                }
-
-                .expereince-text {
-                    text-align: center;
-                    font-size: $font-size-paragraph-text;
-                    display: block;
-                    margin-bottom: size(24);
-                    color: $light-grey-color;
-                    line-height: (1.6);
-                }
-            }
-
-            .expereince-list {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-
-                .expereince-item {
-                    text-align: center;
-                    padding: size(70) 0 0;
-                    width: 100%;
-                    max-width: size(342);
-                    height: size(250);
-                    background-color: $white-color;
-                    box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
-                    margin-bottom: size(25);
-
-                    .expereince-item-number {
-                        font-size: $font-size-title-one;
-                        font-weight: 700;
-                        font-size: $font-size-title-one;
-                        margin-bottom: size(18);
-
-                        &::after {
-                            content: '+';
-                        }
-                    }
-
-                    .expereince-item-text {
-                        font-size: $fz-title-ipad-mini;
-                        color: $light-grey-color;
-                    }
-                }
-            }
+        .section-little-title {
+          margin-bottom: size(18);
         }
+
+        .expereince-title {
+          font-size: $fz-title-ipad-mini;
+          margin-bottom: size(18);
+          font-weight: 500;
+        }
+
+        .expereince-text {
+          text-align: center;
+          font-size: $font-size-paragraph-text;
+          display: block;
+          margin-bottom: size(24);
+          color: $color-text-secondary;
+          line-height: (1.6);
+        }
+      }
+
+      .expereince-list {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .expereince-item {
+          text-align: center;
+          padding: size(70) 0 0;
+          width: 100%;
+          max-width: size(342);
+          height: size(250);
+          background-color: $color-background-primary;
+          box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
+          margin-bottom: size(25);
+
+          .expereince-item-number {
+            font-size: $font-size-title-one;
+            font-weight: 700;
+            font-size: $font-size-title-one;
+            margin-bottom: size(18);
+
+            &::after {
+              content: "+";
+            }
+          }
+
+          .expereince-item-text {
+            font-size: $fz-title-ipad-mini;
+            color: $color-text-secondary;
+          }
+        }
+      }
     }
+  }
 }
 
 @include media(">=tablet", "<=desktop") {
-    .expereince-section {
-        background-color: $skin-color;
-        padding: size(60) size(16);
+  .expereince-section {
+    background-color: $color-background-secondary;
+    padding: size(60) size(16);
 
-        .expereince-wrapper {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+    .expereince-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
 
-            .expereince-content {
-                text-align: left;
-                margin-bottom: size(50);
-                width: 48%;
-                display: inline-block;
+      .expereince-content {
+        text-align: left;
+        margin-bottom: size(50);
+        width: 48%;
+        display: inline-block;
 
-                .section-little-title {
-                    margin-bottom: size(18);
-                }
-
-                .expereince-title {
-                    font-size: $fs-title-phone-desktop;
-                    margin-bottom: size(18);
-                    font-weight: 600;
-                }
-
-                .expereince-text {
-                    text-align: left;
-                    font-size: $font-size-paragraph-text;
-                    display: block;
-                    margin-bottom: size(24);
-                    color: $light-grey-color;
-                    line-height: (1.6);
-                }
-            }
-
-            .expereince-list {
-                width: 48%;
-                display: inline-block;
-
-                .expereince-item {
-                    text-align: center;
-                    padding: size(42) 0 0;
-                    width: 45%;
-                    display: inline-block;
-                    max-width: size(342);
-                    height: size(150);
-                    background-color: $white-color;
-                    box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
-                    margin: 0 size(4) size(8) 0;
-                    font-size: 0;
-
-                    &:nth-child(2n) {
-                        transform: translate(0, 20%);
-                    }
-
-                    .expereince-item-number {
-                        font-size: $fz-title-ipad-mini;
-                        font-weight: 500;
-                        margin-bottom: size(10);
-
-                        &::after {
-                            content: '+';
-                        }
-                    }
-
-                    .expereince-item-text {
-                        font-size: $font-size-title-three;
-                        color: $light-grey-color;
-                    }
-                }
-            }
+        .section-little-title {
+          margin-bottom: size(18);
         }
+
+        .expereince-title {
+          font-size: $fs-title-phone-desktop;
+          margin-bottom: size(18);
+          font-weight: 600;
+        }
+
+        .expereince-text {
+          text-align: left;
+          font-size: $font-size-paragraph-text;
+          display: block;
+          margin-bottom: size(24);
+          color: $color-text-secondary;
+          line-height: (1.6);
+        }
+      }
+
+      .expereince-list {
+        width: 48%;
+        display: inline-block;
+
+        .expereince-item {
+          text-align: center;
+          padding: size(42) 0 0;
+          width: 45%;
+          display: inline-block;
+          max-width: size(342);
+          height: size(150);
+          background-color: $color-background-primary;
+          box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
+          margin: 0 size(4) size(8) 0;
+          font-size: 0;
+
+          &:nth-child(2n) {
+            transform: translate(0, 20%);
+          }
+
+          .expereince-item-number {
+            font-size: $fz-title-ipad-mini;
+            font-weight: 500;
+            margin-bottom: size(10);
+
+            &::after {
+              content: "+";
+            }
+          }
+
+          .expereince-item-text {
+            font-size: $font-size-title-three;
+            color: $color-text-secondary;
+          }
+        }
+      }
     }
+  }
 }
 
 @include media(">=desktop") {
-    .expereince-section {
-        background-color: $skin-color;
-        padding: size(60) size(16) size(80);
+  .expereince-section {
+    background-color: $color-background-secondary;
+    padding: size(60) size(16) size(80);
 
-        .expereince-wrapper {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+    .expereince-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
 
-            .expereince-content {
-                text-align: left;
-                margin-bottom: size(50);
-                width: 48%;
-                display: inline-block;
+      .expereince-content {
+        text-align: left;
+        margin-bottom: size(50);
+        width: 48%;
+        display: inline-block;
 
-                .section-little-title {
-                    margin-bottom: size(18);
-                }
-
-                .expereince-title {
-                    font-size: $font-size-title-two;
-                    margin-bottom: size(18);
-                    font-weight: 600;
-                }
-
-                .expereince-text {
-                    text-align: left;
-                    font-size: $font-size-paragraph-text;
-                    display: block;
-                    margin-bottom: size(50);
-                    color: $light-grey-color;
-                    line-height: (1.6);
-                }
-            }
-
-            .expereince-list {
-                width: 48%;
-                display: inline-block;
-
-                .expereince-item {
-                    text-align: center;
-                    padding: size(74) 0 0;
-                    width: 45%;
-                    display: inline-block;
-                    max-width: size(342);
-                    height: size(270);
-                    background-color: $white-color;
-                    box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
-                    margin: 0 size(20) size(26) 0;
-                    font-size: 0;
-
-
-
-                    &:nth-child(2n) {
-                        transform: translate(0, 20%);
-                    }
-
-                    .expereince-item-number {
-                        font-size: $font-size-title-one;
-                        font-weight: 700;
-                        margin-bottom: size(18);
-
-                        &::after {
-                            content: '+';
-                        }
-                    }
-
-                    .expereince-item-text {
-                        font-size: $font-size-menu-item;
-                        color: $light-grey-color;
-                    }
-                }
-            }
+        .section-little-title {
+          margin-bottom: size(18);
         }
+
+        .expereince-title {
+          font-size: $font-size-title-two;
+          margin-bottom: size(18);
+          font-weight: 600;
+        }
+
+        .expereince-text {
+          text-align: left;
+          font-size: $font-size-paragraph-text;
+          display: block;
+          margin-bottom: size(50);
+          color: $color-text-secondary;
+          line-height: (1.6);
+        }
+      }
+
+      .expereince-list {
+        width: 48%;
+        display: inline-block;
+
+        .expereince-item {
+          text-align: center;
+          padding: size(74) 0 0;
+          width: 45%;
+          display: inline-block;
+          max-width: size(342);
+          height: size(270);
+          background-color: $color-background-primary;
+          box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
+          margin: 0 size(20) size(26) 0;
+          font-size: 0;
+
+          &:nth-child(2n) {
+            transform: translate(0, 20%);
+          }
+
+          .expereince-item-number {
+            font-size: $font-size-title-one;
+            font-weight: 700;
+            margin-bottom: size(18);
+
+            &::after {
+              content: "+";
+            }
+          }
+
+          .expereince-item-text {
+            font-size: $font-size-menu-item;
+            color: $color-text-secondary;
+          }
+        }
+      }
     }
+  }
 }

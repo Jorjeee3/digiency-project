@@ -3,461 +3,453 @@
 @import "../mixins/mixins.scss";
 
 @include media("<=tablet") {
-    .contact-section {
-        padding: 0 size(16);
-        margin-bottom: size(60);
+  .contact-section {
+    padding: 0 size(16);
+    margin-bottom: size(60);
 
-        .contact-content {
-            .section-little-title {
-                margin-bottom: size(18);
-                text-align: center;
+    .contact-content {
+      .section-little-title {
+        margin-bottom: size(18);
+        text-align: center;
+      }
+
+      .project-title {
+        margin-bottom: size(18);
+        font-size: $fz-title-ipad-mini;
+        text-align: center;
+        font-size: 400;
+      }
+
+      .contact-list {
+        margin-bottom: size(50);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        .contact-item {
+          padding: size(18) size(18) size(30);
+          width: 100%;
+          display: inline-block;
+          margin-bottom: size(24);
+          max-width: size(342);
+          height: auto;
+          background-color: $color-background-primary;
+          box-shadow: 0 0 size(10) 0 rgba(34, 60, 80, 0.2);
+          font-size: 0;
+
+          .item-block {
+            margin-bottom: size(34);
+
+            .item-icon-wrapper {
+              width: size(75);
+              height: size(75);
+              border-radius: 50%;
+              display: inline-block;
+              vertical-align: top;
+              background-color: $color-accent;
             }
 
-            .project-title {
-                margin-bottom: size(18);
+            .contact-title-block {
+              display: inline-block;
+              margin-left: size(12);
+
+              .contact-item-subtitle {
+                display: block;
+                color: $color-accent;
                 font-size: $fz-title-ipad-mini;
-                text-align: center;
-                font-size: 400;
+                font-weight: 500;
+                margin-bottom: size(0);
+              }
+
+              .contact-item-title {
+                display: block;
+                font-size: $fs-title-phone-desktop;
+                color: $color-text-primary;
+                font-weight: 500;
+              }
             }
+          }
 
-            .contact-list  {
-                margin-bottom: size(50);
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                flex-direction: column;
+          .communication-list {
+            .communication-item {
+              .communication-item-link {
+                font-size: $font-size-menu-item;
+                color: $color-text-secondary;
+                font-weight: 500;
+              }
 
-                .contact-item {
-                    padding: size(18) size(18) size(30);
-                    width: 100%;
-                    display: inline-block;
-                    margin-bottom: size(24);
-                    max-width: size(342);
-                    height: auto;
-                    background-color: $white-color;
-                    box-shadow: 0 0 size(10) 0 rgba(34, 60, 80, 0.2);
-                    font-size: 0;
+              .communication-item-text {
+                font-size: $font-size-menu-item;
+                color: $color-accent;
+                font-weight: 500;
+                margin-left: size(20);
+              }
 
-                    .item-block {
-                        margin-bottom: size(34);
-
-                        .item-icon-wrapper {
-                            width: size(75);
-                            height: size(75);
-                            border-radius: 50%;
-                            display: inline-block;
-                            vertical-align: top;
-                            background-color: $orange-color;
-                        }
-
-                        .contact-title-block {
-                            display: inline-block;
-                            margin-left: size(12);
-
-                            .contact-item-subtitle {
-                                display: block;
-                                color: $orange-color;
-                                font-size: $fz-title-ipad-mini;
-                                font-weight: 500;
-                                margin-bottom: size(0);
-                            }
-    
-                            .contact-item-title {
-                                display: block;
-                                font-size: $fs-title-phone-desktop;
-                                color: $dark-grey-color;
-                                font-weight: 500;
-                            }
-                        }
-                    }
-
-                    .communication-list {
-                        .communication-item {
-                            .communication-item-link {
-                                font-size: $font-size-menu-item;
-                                color: $light-grey-color;
-                                font-weight: 500;
-                            }
-
-                            .communication-item-text {
-                                font-size: $font-size-menu-item;
-                                color: $orange-color;
-                                font-weight: 500;
-                                margin-left: size(20);
-                            }
-
-                            &:first-child {
-                                margin-bottom: size(10);
-                            }
-                        }
-                    }
-
-                    .contact-address {
-                        font-size: $font-size-menu-item;
-                        color: $light-grey-color;
-                        font-weight: 500;
-                        font-style: normal;
-                    }
-                }
+              &:first-child {
+                margin-bottom: size(10);
+              }
             }
+          }
 
-            .contact-message-block {
-                display: flex;
-                flex-direction: column;
-
-                .contact-image-wrapper {
-                    width: 100%;
-                    margin-bottom: size(50);
-                    .message-image {
-                        width: 100%;
-                    }
-                }
-
-                .message-form {
-                    width: 100%;
-
-                    .message-title {
-                        text-align: center;
-                        font-size: $fs-title-phone-desktop;
-                        margin-bottom: size(18);
-                    }
-
-                    .contact-input-wrapper {
-                        display: grid;
-                        grid-template-columns: repeat(1, 100%);
-                        grid-template-rows: repeat(1, 60px);
-                        grid-row-gap: size(18);
-                        grid-column-gap: size(10);
-                        justify-content: center;
-
-                        .message-input {
-                            padding: size(18);
-                            font-size: $font-size-paragraph-text;
-                            color: $light-grey-color;
-                            box-shadow: 0 0 size(10) 0 rgba(34, 60, 80, 0.2);
-                        }
-                    }
-
-                    .message-label-textarea {
-                        font-size: 0;
-                        
-                        .message-textarea {
-                            padding: size(18);
-                            margin: size(28) 0 size(28);
-                            font-size: $font-size-paragraph-text;
-                            color: $light-grey-color;
-                            box-shadow: 0 0 size(10) 0 rgba(34, 60, 80, 0.2);
-                            width: 100%;
-                            resize: none;
-                            height: size(160);
-                        }
-                    }
-                }
-            }
+          .contact-address {
+            font-size: $font-size-menu-item;
+            color: $color-text-secondary;
+            font-weight: 500;
+            font-style: normal;
+          }
         }
+      }
+
+      .contact-message-block {
+        display: flex;
+        flex-direction: column;
+
+        .contact-image-wrapper {
+          width: 100%;
+          margin-bottom: size(50);
+          .message-image {
+            width: 100%;
+          }
+        }
+
+        .message-form {
+          width: 100%;
+
+          .message-title {
+            text-align: center;
+            font-size: $fs-title-phone-desktop;
+            margin-bottom: size(18);
+          }
+
+          .contact-input-wrapper {
+            display: grid;
+            grid-template-columns: repeat(1, 100%);
+            grid-template-rows: repeat(1, 60px);
+            grid-row-gap: size(18);
+            grid-column-gap: size(10);
+            justify-content: center;
+
+            .message-input {
+              padding: size(18);
+              font-size: $font-size-paragraph-text;
+              color: $color-text-secondary;
+              box-shadow: 0 0 size(10) 0 rgba(34, 60, 80, 0.2);
+            }
+          }
+
+          .message-label-textarea {
+            font-size: 0;
+
+            .message-textarea {
+              padding: size(18);
+              margin: size(28) 0 size(28);
+              font-size: $font-size-paragraph-text;
+              color: $color-text-secondary;
+              box-shadow: 0 0 size(10) 0 rgba(34, 60, 80, 0.2);
+              width: 100%;
+              resize: none;
+              height: size(160);
+            }
+          }
+        }
+      }
     }
+  }
 }
 
 @include media(">=tablet", "<=desktop") {
-    .contact-section {
-        padding: 0 size(16);
+  .contact-section {
+    padding: 0 size(16);
+    margin-bottom: size(60);
+
+    .contact-content {
+      .section-little-title {
+        margin-bottom: size(18);
+        text-align: center;
+      }
+
+      .project-title {
         margin-bottom: size(60);
+        font-size: $fs-title-phone-desktop;
+        text-align: center;
+        font-size: 400;
+      }
 
-        .contact-content {
-            .section-little-title {
-                margin-bottom: size(18);
-                text-align: center;
+      .contact-list {
+        margin-bottom: size(60);
+        padding: 0 size(40);
+        display: flex;
+        justify-content: space-around;
+
+        .contact-item {
+          padding: size(18);
+          width: 100%;
+          display: inline-block;
+          max-width: size(212);
+          height: auto;
+          background-color: $color-background-primary;
+          box-shadow: 0 0 size(10) 0 rgba(34, 60, 80, 0.2);
+          font-size: 0;
+
+          .item-block {
+            margin-bottom: size(18);
+
+            .item-icon-wrapper {
+              width: size(40);
+              height: size(40);
+              border-radius: 50%;
+              display: inline-block;
+              vertical-align: top;
+              background-color: $color-accent;
             }
 
-            .project-title {
-                margin-bottom: size(60);
-                font-size: $fs-title-phone-desktop;
-                text-align: center;
-                font-size: 400;
+            .contact-title-block {
+              display: inline-block;
+              margin-left: size(12);
+
+              .contact-item-subtitle {
+                display: block;
+                color: $color-accent;
+                font-size: $font-size-menu-item;
+                font-weight: 500;
+                margin-bottom: size(0);
+              }
+
+              .contact-item-title {
+                display: block;
+                font-size: $fz-title-ipad-mini;
+                color: $color-text-primary;
+                font-weight: 500;
+              }
             }
+          }
 
-            .contact-list  {
-                margin-bottom: size(60);
-                padding: 0 size(40);
-                display: flex;
-                justify-content: space-around;
+          .communication-list {
+            .communication-item {
+              .communication-item-link {
+                font-size: $fs-title-phone;
+                color: $color-text-secondary;
+              }
 
-                .contact-item {
-                    padding: size(18);
-                    width: 100%;
-                    display: inline-block;
-                    max-width: size(212);
-                    height: auto;
-                    background-color: $white-color;
-                    box-shadow: 0 0 size(10) 0 rgba(34, 60, 80, 0.2);
-                    font-size: 0;
+              .communication-item-text {
+                font-size: $fs-title-phone;
+                color: $color-accent;
+                font-weight: 500;
+              }
 
-                    .item-block {
-                        margin-bottom: size(18);
-
-                        .item-icon-wrapper {
-                            width: size(40);
-                            height: size(40);
-                            border-radius: 50%;
-                            display: inline-block;
-                            vertical-align: top;
-                            background-color: $orange-color;
-                        }
-
-                        .contact-title-block {
-                            display: inline-block;
-                            margin-left: size(12);
-
-                            .contact-item-subtitle {
-                                display: block;
-                                color: $orange-color;
-                                font-size: $font-size-menu-item;
-                                font-weight: 500;
-                                margin-bottom: size(0);
-                            }
-    
-                            .contact-item-title {
-                                display: block;
-                                font-size: $fz-title-ipad-mini;
-                                color: $dark-grey-color;
-                                font-weight: 500;
-                            }
-                        }
-                    }
-
-                    .communication-list {
-                        .communication-item {
-                            .communication-item-link {
-                                font-size: $fs-title-phone;
-                                color: $light-grey-color;
-                            }
-
-                            .communication-item-text {
-                                font-size: $fs-title-phone;
-                                color: $orange-color;
-                                font-weight: 500;
-                            }
-
-                            &:first-child {
-                                margin-bottom: size(14);
-                            }
-                        }
-                    }
-
-                    .contact-address {
-                        font-size: $font-size-title-three;
-                        color: $light-grey-color;
-                        font-weight: 400;
-                        font-style: normal;
-                    }
-                }
+              &:first-child {
+                margin-bottom: size(14);
+              }
             }
+          }
 
-            .contact-message-block {
-                display: flex;
-                align-items: center;
-
-                .contact-image-wrapper {
-                    width: 45%;
-                    .message-image {
-                        width: 100%;
-                    }
-                }
-
-                .message-form {
-                    width: 55%;
-
-                    .message-title {
-                        font-size: $fs-title-phone-desktop;
-                        margin-bottom: size(18);
-                    }
-
-                    .contact-input-wrapper {
-                        display: grid;
-                        grid-template-columns: repeat(2, 49%);
-                        grid-template-rows: repeat(2, 60px);
-                        grid-row-gap: size(18);
-                        grid-column-gap: size(10);
-                        justify-content: center;
-
-                        .message-input {
-                            padding: size(18);
-                            font-size: $font-size-paragraph-text;
-                            color: $light-grey-color;
-                            box-shadow: 0 0 size(10) 0 rgba(34, 60, 80, 0.2);
-                        }
-                    }
-
-                    .message-label-textarea {
-                        font-size: 0;
-                        
-                        .message-textarea {
-                            padding: size(18);
-                            margin: size(28) 0 size(28);
-                            font-size: $font-size-paragraph-text;
-                            color: $light-grey-color;
-                            box-shadow: 0 0 size(10) 0 rgba(34, 60, 80, 0.2);
-                            width: 100%;
-                            resize: none;
-                            height: size(160);
-                        }
-                    }
-                }
-            }
+          .contact-address {
+            font-size: $font-size-title-three;
+            color: $color-text-secondary;
+            font-weight: 400;
+            font-style: normal;
+          }
         }
+      }
+
+      .contact-message-block {
+        display: flex;
+        align-items: center;
+
+        .contact-image-wrapper {
+          width: 45%;
+          .message-image {
+            width: 100%;
+          }
+        }
+
+        .message-form {
+          width: 55%;
+
+          .message-title {
+            font-size: $fs-title-phone-desktop;
+            margin-bottom: size(18);
+          }
+
+          .contact-input-wrapper {
+            display: grid;
+            grid-template-columns: repeat(2, 49%);
+            grid-template-rows: repeat(2, 60px);
+            grid-row-gap: size(18);
+            grid-column-gap: size(10);
+            justify-content: center;
+
+            .message-input {
+              padding: size(18);
+              font-size: $font-size-paragraph-text;
+              color: $color-text-secondary;
+              box-shadow: 0 0 size(10) 0 rgba(34, 60, 80, 0.2);
+            }
+          }
+
+          .message-label-textarea {
+            font-size: 0;
+
+            .message-textarea {
+              padding: size(18);
+              margin: size(28) 0 size(28);
+              font-size: $font-size-paragraph-text;
+              color: $color-text-secondary;
+              box-shadow: 0 0 size(10) 0 rgba(34, 60, 80, 0.2);
+              width: 100%;
+              resize: none;
+              height: size(160);
+            }
+          }
+        }
+      }
     }
+  }
 }
 
 @include media(">=desktop") {
-    .contact-section {
+  .contact-section {
+    margin-bottom: size(60);
+
+    .contact-content {
+      .section-little-title {
+        margin-bottom: size(24);
+        text-align: center;
+      }
+
+      .project-title {
         margin-bottom: size(60);
+        font-size: $font-size-title-two;
+        text-align: center;
+      }
 
-        .contact-content {
-            .section-little-title {
-                margin-bottom: size(24);
-                text-align: center;
+      .contact-list {
+        margin-bottom: size(60);
+        display: flex;
+        justify-content: space-around;
+
+        .contact-item {
+          padding: size(18);
+          width: 100%;
+          display: inline-block;
+          max-width: size(370);
+          height: auto;
+          background-color: $color-background-primary;
+          box-shadow: 0 0 size(10) 0 rgba(34, 60, 80, 0.2);
+          font-size: 0;
+
+          .item-block {
+            margin-bottom: size(38);
+
+            .item-icon-wrapper {
+              width: size(75);
+              height: size(75);
+              border-radius: 50%;
+              display: inline-block;
+              vertical-align: top;
+              background-color: $color-accent;
             }
 
-            .project-title {
-                margin-bottom: size(60);
-                font-size: $font-size-title-two;
-                text-align: center;
+            .contact-title-block {
+              display: inline-block;
+              margin-left: size(18);
+
+              .contact-item-subtitle {
+                display: block;
+                color: $color-accent;
+                font-size: $fz-title-ipad-mini;
+                font-weight: 500;
+                margin-bottom: size(10);
+              }
+
+              .contact-item-title {
+                display: block;
+                font-size: $fs-title-phone-desktop;
+                color: $color-text-primary;
+                font-weight: 600;
+              }
             }
+          }
 
-            .contact-list  {
-                margin-bottom: size(60);
-                display: flex;
-                justify-content: space-around;
+          .communication-list {
+            .communication-item {
+              .communication-item-link {
+                font-size: $font-size-menu-item;
+                color: $color-text-secondary;
+              }
 
-                .contact-item {
-                    padding: size(18);
-                    width: 100%;
-                    display: inline-block;
-                    max-width: size(370);
-                    height: auto;
-                    background-color: $white-color;
-                    box-shadow: 0 0 size(10) 0 rgba(34, 60, 80, 0.2);
-                    font-size: 0;
+              .communication-item-text {
+                font-size: $font-size-menu-item;
+                color: $color-accent;
+                font-weight: 500;
+              }
 
-                    .item-block {
-                        margin-bottom: size(38);
-
-                        .item-icon-wrapper {
-                            width: size(75);
-                            height: size(75);
-                            border-radius: 50%;
-                            display: inline-block;
-                            vertical-align: top;
-                            background-color: $orange-color;
-                        }
-
-                        .contact-title-block {
-                            display: inline-block;
-                            margin-left: size(18);
-
-                            .contact-item-subtitle {
-                                display: block;
-                                color: $orange-color;
-                                font-size: $fz-title-ipad-mini;
-                                font-weight: 500;
-                                margin-bottom: size(10);
-                            }
-    
-                            .contact-item-title {
-                                display: block;
-                                font-size: $fs-title-phone-desktop;
-                                color: $dark-grey-color;
-                                font-weight: 600;
-                            }
-                        }
-                    }
-
-                    .communication-list {
-                        .communication-item {
-                            .communication-item-link {
-                                font-size: $font-size-menu-item;
-                                color: $light-grey-color;
-                            }
-
-                            .communication-item-text {
-                                font-size: $font-size-menu-item;
-                                color: $orange-color;
-                                font-weight: 500;
-                            }
-
-                            &:first-child {
-                                margin-bottom: size(18);
-                            }
-                        }
-                    }
-
-                    .contact-address {
-                        font-size: $font-size-menu-item;
-                        color: $light-grey-color;
-                        font-style: normal;
-                    }
-                }
+              &:first-child {
+                margin-bottom: size(18);
+              }
             }
+          }
 
-            .contact-message-block {
-                display: flex;
-                align-items: center;
-
-                .contact-image-wrapper {
-                    width: 45%;
-                    .message-image {
-                        width: 100%;
-                    }
-                }
-
-                .message-form {
-                    width: 55%;
-
-                    .message-title {
-                        font-size: $fs-title-phone-desktop;
-                        margin-bottom: size(18);
-                    }
-
-                    .contact-input-wrapper {
-                        display: grid;
-                        grid-template-columns: repeat(2, 49%);
-                        grid-template-rows: repeat(2, 60px);
-                        grid-row-gap: size(18);
-                        grid-column-gap: size(10);
-                        justify-content: center;
-
-                        .message-input {
-                            padding: size(18);
-                            font-size: $font-size-paragraph-text;
-                            color: $light-grey-color;
-                            box-shadow: 0 0 size(10) 0 rgba(34, 60, 80, 0.2);
-                        }
-                    }
-
-                    .message-label-textarea {
-                        font-size: 0;
-                        
-                        .message-textarea {
-                            padding: size(18);
-                            margin: size(28) 0 size(28);
-                            font-size: $font-size-paragraph-text;
-                            color: $light-grey-color;
-                            box-shadow: 0 0 size(10) 0 rgba(34, 60, 80, 0.2);
-                            width: 100%;
-                            resize: none;
-                            height: size(160);
-                        }
-                    }
-                }
-            }
+          .contact-address {
+            font-size: $font-size-menu-item;
+            color: $color-text-secondary;
+            font-style: normal;
+          }
         }
+      }
+
+      .contact-message-block {
+        display: flex;
+        align-items: center;
+
+        .contact-image-wrapper {
+          width: 45%;
+          .message-image {
+            width: 100%;
+          }
+        }
+
+        .message-form {
+          width: 55%;
+
+          .message-title {
+            font-size: $fs-title-phone-desktop;
+            margin-bottom: size(18);
+          }
+
+          .contact-input-wrapper {
+            display: grid;
+            grid-template-columns: repeat(2, 49%);
+            grid-template-rows: repeat(2, 60px);
+            grid-row-gap: size(18);
+            grid-column-gap: size(10);
+            justify-content: center;
+
+            .message-input {
+              padding: size(18);
+              font-size: $font-size-paragraph-text;
+              color: $color-text-secondary;
+              box-shadow: 0 0 size(10) 0 rgba(34, 60, 80, 0.2);
+            }
+          }
+
+          .message-label-textarea {
+            font-size: 0;
+
+            .message-textarea {
+              padding: size(18);
+              margin: size(28) 0 size(28);
+              font-size: $font-size-paragraph-text;
+              color: $color-text-secondary;
+              box-shadow: 0 0 size(10) 0 rgba(34, 60, 80, 0.2);
+              width: 100%;
+              resize: none;
+              height: size(160);
+            }
+          }
+        }
+      }
     }
+  }
 }
-
-
-
-
-
-
-
-

@@ -25,16 +25,87 @@ $fs-title-phone: size(12);
 
 // --------header--------
 
-$white-color: #fff;
-$orange-color: #FF5300;
-$orange-opasity-color: #ff5300e6;
-$light-grey-color: #7B7B7B;
-$dark-grey-color: #373737;
-$skin-color: #FFF7F4;
+// $dark-theme: true !default;
+
+$color-text-primary: #3a3b3c !default;
+$color-text-secondary: #7b7b7b !default;
+
+$color-background-primary: #fff !default;
+$color-background-secondary: #fff7f4 !default;
+$color-background-default: #fff !default;
+
+$color-accent: #ff5300 !default;
+
+
+
+
+
+
+
+
+
+
+
+
+
+// @if $dark-theme {
+
+//     $color-text-primary: darken($color-text-primary, #fff);
+//     $color-text-secondary: darken($color-text-secondary, #7b7b7b);
+
+//     $color-background-primary: darken($color-background-primary, #3a3b3c);
+//     $color-background-secondary: darken($color-background-secondary, #242526);
+//     $color-background-default: darken($color-background-default, #18191a);
+
+//     $color-accent: darken($color-accent, #ff5300);
+// }
+
+
+
+
+
+
+// @mixin theme-colors($light-theme: true) {
+//   @if $light-theme {
+
+//     $color-text-primary: #3a3b3c;
+//     $color-text-secondary: #7b7b7b;
+
+//     $color-background-primary: #fff;
+//     $color-background-secondary: #fff7f4;
+//     $color-background-default: #fff;
+
+//     $color-accent: #ff5300;
+//   } @else {
+
+//     $color-text-primary: darken($primary-color, #fff);
+//     $color-text-secondary: darken($primary-color, #7b7b7b);
+
+//     $color-background-primary: darken($primary-color, #3a3b3c);
+//     $color-background-secondary: darken($primary-color, #242526);
+//     $color-background-default: darken($primary-color, #18191a);
+
+//     $color-accent: #ff5300;
+//   }
+// }
+
+
+
+
+
+
+
+
+
+
+
+// $color-text-primary: #fff;
+//   $color-text-secondary: #7b7b7b;
+
+//   $color-background-primary: #3a3b3c;
+//   $color-background-secondary: #242526;
+//   $color-background-default: #18191a;
+
+//   $color-accent: #ff5300;
 
 // --------footer--------
-
-
-
-
-

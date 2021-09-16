@@ -3,132 +3,132 @@
 @import "../mixins/mixins.scss";
 
 @include media("<=tablet") {
-    .hero-section {
-        padding: size(50) size(20);
-        background-color: $skin-color;
+  .hero-section {
+    padding: size(50) size(20);
+    background-color: $color-background-secondary;
 
-        .hero-content {
-            display: flex;
-            flex-direction: column-reverse;
+    .hero-content {
+      display: flex;
+      flex-direction: column-reverse;
 
-            .hero-about-block {
-                text-align: center;
+      .hero-about-block {
+        text-align: center;
 
-                .hero-title {
-                    font-size: $fs-title-phone-desktop;
-                    color: $dark-grey-color;
-                    font-weight: 600;
-                }
-
-                .hero-text {
-                    color: $light-grey-color;
-                    font-size: $font-size-paragraph-text;
-                    line-height: size(26);
-                }
-            }
-
-            .hero-image-block {
-                margin-bottom: size(50);
-                margin: 0 auto;
-
-                .hero-image {
-                    width: 100%;
-                    max-width: size(639);
-                    height: auto;
-                    margin-bottom: size(50);
-                }
-            }
+        .hero-title {
+          font-size: $fs-title-phone-desktop;
+          color: $color-text-primary;
+          font-weight: 600;
         }
+
+        .hero-text {
+          color: $color-text-secondary;
+          font-size: $font-size-paragraph-text;
+          line-height: size(26);
+        }
+      }
+
+      .hero-image-block {
+        margin-bottom: size(50);
+        margin: 0 auto;
+
+        .hero-image {
+          width: 100%;
+          max-width: size(639);
+          height: auto;
+          margin-bottom: size(50);
+        }
+      }
     }
+  }
 }
 
 @include media(">=tablet", "<=desktop") {
-    .hero-section {
-        padding: size(72) size(16);
-        background-color: $skin-color;
+  .hero-section {
+    padding: size(72) size(16);
+    background-color: $color-background-secondary;
 
-        .hero-content {
-            display: flex;
-            flex-direction: row;
+    .hero-content {
+      display: flex;
+      flex-direction: row;
 
-            .hero-about-block {
-                display: inline-block;
-                width: 40%;
-                text-align: left;
-                margin-right: size(34);
+      .hero-about-block {
+        display: inline-block;
+        width: 40%;
+        text-align: left;
+        margin-right: size(34);
 
-                .hero-title {
-                    font-size: $fz-main-title;
-                    color: $dark-grey-color;
-                    margin-bottom: size(18);
-                    font-weight: 600;
-                }
-
-                .hero-text {
-                    color: $light-grey-color;
-                    font-size: $font-size-paragraph-text;
-                    line-height: size(26);
-                    margin: 0 0 size(24) 0;
-                }
-            }
-
-            .hero-image-block {
-                margin-bottom: size(50);
-                display: inline-block;
-                width: 55%;
-
-                .hero-image {
-                    width: 100%;
-                    max-width: size(639);
-                    height: auto;
-                }
-            }
+        .hero-title {
+          font-size: $fz-main-title;
+          color: $color-text-primary;
+          margin-bottom: size(18);
+          font-weight: 600;
         }
+
+        .hero-text {
+          color: $color-text-secondary;
+          font-size: $font-size-paragraph-text;
+          line-height: size(26);
+          margin: 0 0 size(24) 0;
+        }
+      }
+
+      .hero-image-block {
+        margin-bottom: size(50);
+        display: inline-block;
+        width: 55%;
+
+        .hero-image {
+          width: 100%;
+          max-width: size(639);
+          height: auto;
+        }
+      }
     }
+  }
 }
 
 @include media(">=desktop") {
-    .hero-section {
-        padding: size(176) size(16);
-        background-color: $skin-color;
+  .hero-section {
+    padding: size(176) size(16);
+    background-color: $color-background-secondary;
 
-        .hero-content {
-            display: flex;
-            flex-direction: row;
+    .hero-content {
+      display: flex;
+      flex-direction: row;
 
-            .hero-about-block {
-                display: inline-block;
-                width: 40%;
-                text-align: left;
-                margin-right: size(34);
+      .hero-about-block {
+        display: inline-block;
+        width: 40%;
+        text-align: left;
+        margin-right: size(34);
 
-                .hero-title {
-                    font-size: $font-size-title-one;
-                    color: $dark-grey-color;
-                    margin-bottom: size(18);
-                    font-weight: 600;
-                    line-height: size(60);
-                }
-
-                .hero-text {
-                    color: $light-grey-color;
-                    font-size: $font-size-paragraph-text;
-                    line-height: size(26);
-                    margin: 0 0 size(50) 0;
-                }
-            }
-
-            .hero-image-block {
-                margin-bottom: size(50);
-                display: inline-block;
-                width: 55%;
-
-                .hero-image {
-                    width: 100%;
-                    max-width: size(639);
-                    height: auto;
-                }
-            }
+        .hero-title {
+          font-size: $font-size-title-one;
+          color: $color-text-primary;
+          margin-bottom: size(18);
+          font-weight: 600;
+          line-height: size(60);
         }
+
+        .hero-text {
+          color: $color-text-secondary;
+          font-size: $font-size-paragraph-text;
+          line-height: size(26);
+          margin: 0 0 size(50) 0;
+        }
+      }
+
+      .hero-image-block {
+        margin-bottom: size(50);
+        display: inline-block;
+        width: 55%;
+
+        .hero-image {
+          width: 100%;
+          max-width: size(639);
+          height: auto;
+        }
+      }
     }
+  }
 }
