@@ -4,7 +4,7 @@
 
 @include media("<=tablet") {
   .expereince-section {
-    background-color: $color-background-secondary;
+    background-color: var(--color-background-secondary);
     padding: size(50) size(16);
 
     .expereince-wrapper {
@@ -27,7 +27,7 @@
           font-size: $font-size-paragraph-text;
           display: block;
           margin-bottom: size(24);
-          color: $color-text-secondary;
+          color: var(--color-text-primary);
           line-height: (1.6);
         }
       }
@@ -44,7 +44,7 @@
           width: 100%;
           max-width: size(342);
           height: size(250);
-          background-color: $color-background-primary;
+          background-color: var(--color-background-primary);
           box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
           margin-bottom: size(25);
 
@@ -53,6 +53,7 @@
             font-weight: 700;
             font-size: $font-size-title-one;
             margin-bottom: size(18);
+            color: var(--color-text-primary);
 
             &::after {
               content: "+";
@@ -61,7 +62,7 @@
 
           .expereince-item-text {
             font-size: $fz-title-ipad-mini;
-            color: $color-text-secondary;
+            color: var(--color-text-secondary);
           }
         }
       }
@@ -71,7 +72,7 @@
 
 @include media(">=tablet", "<=desktop") {
   .expereince-section {
-    background-color: $color-background-secondary;
+    background-color: var(--color-background-secondary);
     padding: size(60) size(16);
 
     .expereince-wrapper {
@@ -100,7 +101,7 @@
           font-size: $font-size-paragraph-text;
           display: block;
           margin-bottom: size(24);
-          color: $color-text-secondary;
+          color: var(--color-text-primary);
           line-height: (1.6);
         }
       }
@@ -116,7 +117,7 @@
           display: inline-block;
           max-width: size(342);
           height: size(150);
-          background-color: $color-background-primary;
+          background-color: var(--color-background-primary);
           box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
           margin: 0 size(4) size(8) 0;
           font-size: 0;
@@ -128,6 +129,7 @@
           .expereince-item-number {
             font-size: $fz-title-ipad-mini;
             font-weight: 500;
+            color: var(--color-text-primary);
             margin-bottom: size(10);
 
             &::after {
@@ -137,7 +139,7 @@
 
           .expereince-item-text {
             font-size: $font-size-title-three;
-            color: $color-text-secondary;
+            color: var(--color-text-secondary);
           }
         }
       }
@@ -147,7 +149,7 @@
 
 @include media(">=desktop") {
   .expereince-section {
-    background-color: $color-background-secondary;
+    background-color: var(--color-background-secondary);
     padding: size(60) size(16) size(80);
 
     .expereince-wrapper {
@@ -176,7 +178,7 @@
           font-size: $font-size-paragraph-text;
           display: block;
           margin-bottom: size(50);
-          color: $color-text-secondary;
+          color: var(--color-text-primary);
           line-height: (1.6);
         }
       }
@@ -192,7 +194,7 @@
           display: inline-block;
           max-width: size(342);
           height: size(270);
-          background-color: $color-background-primary;
+          background-color: var(--color-background-primary);
           box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
           margin: 0 size(20) size(26) 0;
           font-size: 0;
@@ -204,6 +206,7 @@
           .expereince-item-number {
             font-size: $font-size-title-one;
             font-weight: 700;
+            color: var(--color-text-primary);
             margin-bottom: size(18);
 
             &::after {
@@ -213,7 +216,7 @@
 
           .expereince-item-text {
             font-size: $font-size-menu-item;
-            color: $color-text-secondary;
+            color: var(--color-text-secondary);
           }
         }
       }

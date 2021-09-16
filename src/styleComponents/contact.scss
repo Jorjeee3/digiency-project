@@ -34,7 +34,7 @@
           margin-bottom: size(24);
           max-width: size(342);
           height: auto;
-          background-color: $color-background-primary;
+          background-color: var(--color-background-primary);
           box-shadow: 0 0 size(10) 0 rgba(34, 60, 80, 0.2);
           font-size: 0;
 
@@ -47,7 +47,7 @@
               border-radius: 50%;
               display: inline-block;
               vertical-align: top;
-              background-color: $color-accent;
+              background-color: var(--color-accent);
             }
 
             .contact-title-block {
@@ -56,7 +56,7 @@
 
               .contact-item-subtitle {
                 display: block;
-                color: $color-accent;
+                color: var(--color-accent);
                 font-size: $fz-title-ipad-mini;
                 font-weight: 500;
                 margin-bottom: size(0);
@@ -65,7 +65,7 @@
               .contact-item-title {
                 display: block;
                 font-size: $fs-title-phone-desktop;
-                color: $color-text-primary;
+                color: var(--color-text-primary);
                 font-weight: 500;
               }
             }
@@ -75,13 +75,13 @@
             .communication-item {
               .communication-item-link {
                 font-size: $font-size-menu-item;
-                color: $color-text-secondary;
+                color: var(--color-text-primary);
                 font-weight: 500;
               }
 
               .communication-item-text {
                 font-size: $font-size-menu-item;
-                color: $color-accent;
+                color: var(--color-accent);
                 font-weight: 500;
                 margin-left: size(20);
               }
@@ -94,7 +94,7 @@
 
           .contact-address {
             font-size: $font-size-menu-item;
-            color: $color-text-secondary;
+            color: var(--color-text-primary);
             font-weight: 500;
             font-style: normal;
           }
@@ -133,7 +133,8 @@
             .message-input {
               padding: size(18);
               font-size: $font-size-paragraph-text;
-              color: $color-text-secondary;
+              color: var(--color-text-primary);
+              background-color: var(--color-background-primary);
               box-shadow: 0 0 size(10) 0 rgba(34, 60, 80, 0.2);
             }
           }
@@ -145,7 +146,8 @@
               padding: size(18);
               margin: size(28) 0 size(28);
               font-size: $font-size-paragraph-text;
-              color: $color-text-secondary;
+              color: var(--color-text-primary);
+              background-color: var(--color-background-primary);
               box-shadow: 0 0 size(10) 0 rgba(34, 60, 80, 0.2);
               width: 100%;
               resize: none;
@@ -188,7 +190,7 @@
           display: inline-block;
           max-width: size(212);
           height: auto;
-          background-color: $color-background-primary;
+          background-color: var(--color-background-primary);
           box-shadow: 0 0 size(10) 0 rgba(34, 60, 80, 0.2);
           font-size: 0;
 
@@ -201,7 +203,7 @@
               border-radius: 50%;
               display: inline-block;
               vertical-align: top;
-              background-color: $color-accent;
+              background-color: var(--color-accent);
             }
 
             .contact-title-block {
@@ -210,7 +212,7 @@
 
               .contact-item-subtitle {
                 display: block;
-                color: $color-accent;
+                color: var(--color-accent);
                 font-size: $font-size-menu-item;
                 font-weight: 500;
                 margin-bottom: size(0);
@@ -219,7 +221,7 @@
               .contact-item-title {
                 display: block;
                 font-size: $fz-title-ipad-mini;
-                color: $color-text-primary;
+                color: var(--color-text-primary);
                 font-weight: 500;
               }
             }
@@ -229,12 +231,12 @@
             .communication-item {
               .communication-item-link {
                 font-size: $fs-title-phone;
-                color: $color-text-secondary;
+                color: var(--color-text-primary);
               }
 
               .communication-item-text {
                 font-size: $fs-title-phone;
-                color: $color-accent;
+                color: var(--color-accent);
                 font-weight: 500;
               }
 
@@ -246,7 +248,7 @@
 
           .contact-address {
             font-size: $font-size-title-three;
-            color: $color-text-secondary;
+                color: var(--color-text-primary);
             font-weight: 400;
             font-style: normal;
           }
@@ -283,7 +285,8 @@
             .message-input {
               padding: size(18);
               font-size: $font-size-paragraph-text;
-              color: $color-text-secondary;
+              color: var(--color-text-primary);
+              background-color: var(--color-background-primary);
               box-shadow: 0 0 size(10) 0 rgba(34, 60, 80, 0.2);
             }
           }
@@ -295,7 +298,8 @@
               padding: size(18);
               margin: size(28) 0 size(28);
               font-size: $font-size-paragraph-text;
-              color: $color-text-secondary;
+              color: var(--color-text-primary);
+              background-color: var(--color-background-primary);
               box-shadow: 0 0 size(10) 0 rgba(34, 60, 80, 0.2);
               width: 100%;
               resize: none;
@@ -335,7 +339,7 @@
           display: inline-block;
           max-width: size(370);
           height: auto;
-          background-color: $color-background-primary;
+          background-color: var(--color-background-primary);
           box-shadow: 0 0 size(10) 0 rgba(34, 60, 80, 0.2);
           font-size: 0;
 
@@ -348,7 +352,7 @@
               border-radius: 50%;
               display: inline-block;
               vertical-align: top;
-              background-color: $color-accent;
+              background-color: var(--color-accent);
             }
 
             .contact-title-block {
@@ -357,7 +361,7 @@
 
               .contact-item-subtitle {
                 display: block;
-                color: $color-accent;
+                color: var(--color-accent);
                 font-size: $fz-title-ipad-mini;
                 font-weight: 500;
                 margin-bottom: size(10);
@@ -366,7 +370,7 @@
               .contact-item-title {
                 display: block;
                 font-size: $fs-title-phone-desktop;
-                color: $color-text-primary;
+                color: var(--color-text-primary);
                 font-weight: 600;
               }
             }
@@ -376,12 +380,12 @@
             .communication-item {
               .communication-item-link {
                 font-size: $font-size-menu-item;
-                color: $color-text-secondary;
+                color: var(--color-text-primary);
               }
 
               .communication-item-text {
                 font-size: $font-size-menu-item;
-                color: $color-accent;
+                color: var(--color-accent);
                 font-weight: 500;
               }
 
@@ -393,7 +397,7 @@
 
           .contact-address {
             font-size: $font-size-menu-item;
-            color: $color-text-secondary;
+            color: var(--color-text-primary);
             font-style: normal;
           }
         }
@@ -429,7 +433,8 @@
             .message-input {
               padding: size(18);
               font-size: $font-size-paragraph-text;
-              color: $color-text-secondary;
+              color: var(--color-text-primary);
+              background-color: var(--color-background-primary);
               box-shadow: 0 0 size(10) 0 rgba(34, 60, 80, 0.2);
             }
           }
@@ -441,7 +446,8 @@
               padding: size(18);
               margin: size(28) 0 size(28);
               font-size: $font-size-paragraph-text;
-              color: $color-text-secondary;
+              color: var(--color-text-primary);
+              background-color: var(--color-background-primary);
               box-shadow: 0 0 size(10) 0 rgba(34, 60, 80, 0.2);
               width: 100%;
               resize: none;

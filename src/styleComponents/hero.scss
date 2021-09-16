@@ -5,7 +5,7 @@
 @include media("<=tablet") {
   .hero-section {
     padding: size(50) size(20);
-    background-color: $color-background-secondary;
+    background-color: var(--color-background-secondary);
 
     .hero-content {
       display: flex;
@@ -16,12 +16,12 @@
 
         .hero-title {
           font-size: $fs-title-phone-desktop;
-          color: $color-text-primary;
+          color: var(--color-text-primary);
           font-weight: 600;
         }
 
         .hero-text {
-          color: $color-text-secondary;
+          color: var(--color-text-primary);
           font-size: $font-size-paragraph-text;
           line-height: size(26);
         }
@@ -45,7 +45,7 @@
 @include media(">=tablet", "<=desktop") {
   .hero-section {
     padding: size(72) size(16);
-    background-color: $color-background-secondary;
+    background-color: var(--color-background-secondary);
 
     .hero-content {
       display: flex;
@@ -59,13 +59,13 @@
 
         .hero-title {
           font-size: $fz-main-title;
-          color: $color-text-primary;
+          color: var(--color-text-primary);
           margin-bottom: size(18);
           font-weight: 600;
         }
 
         .hero-text {
-          color: $color-text-secondary;
+          color: var(--color-text-primary);
           font-size: $font-size-paragraph-text;
           line-height: size(26);
           margin: 0 0 size(24) 0;
@@ -90,7 +90,7 @@
 @include media(">=desktop") {
   .hero-section {
     padding: size(176) size(16);
-    background-color: $color-background-secondary;
+    background-color: var(--color-background-secondary);
 
     .hero-content {
       display: flex;
@@ -104,14 +104,14 @@
 
         .hero-title {
           font-size: $font-size-title-one;
-          color: $color-text-primary;
+          color: var(--color-text-primary);
           margin-bottom: size(18);
           font-weight: 600;
           line-height: size(60);
         }
 
         .hero-text {
-          color: $color-text-secondary;
+          color: var(--color-text-primary);
           font-size: $font-size-paragraph-text;
           line-height: size(26);
           margin: 0 0 size(50) 0;

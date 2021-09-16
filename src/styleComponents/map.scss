@@ -9,10 +9,10 @@
 
 @include media(">=phone", "<=tablet") {
     .map-section {
-        padding: 0 size(160);
+        padding: 0 size(16);
         .map-content {
             width: 100%;    
-            padding: 0 size(160);
+            padding: 0 size(60);
 
             .map {
                 width: 100%;
@@ -29,7 +29,7 @@
         padding: 0 size(160);
         .map-content {
             width: 100%;    
-            padding: 0 size(160);
+            // padding: 0 size(160);
 
             .map {
                 width: 100%;

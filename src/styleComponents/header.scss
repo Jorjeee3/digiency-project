@@ -4,7 +4,7 @@
 
 @include media("<=tablet") {
   .header {
-    background-color: $color-background-primary;
+    background-color: var(--color-background-primary);
     padding: size(16);
     z-index: 0;
 
@@ -23,7 +23,7 @@
         position: fixed;
         top: 0;
         width: size(240);
-        background-color: $color-background-primary;
+        background-color: var(--color-background-primary);
         height: 100vh;
         left: size(-300);
         display: block;
@@ -47,7 +47,7 @@
           }
 
           .header-item-link {
-            color: $color-text-primary;
+            color: var(--color-text-primary);
             font-size: $font-size-menu-item;
             font-weight: 500;
             border-bottom: size(2) solid #857777;
@@ -77,7 +77,7 @@
         left: 50%;
         transform: translate(-50%, -50%);
         border: 0;
-        background-color: $color-background-primary;
+        background-color: var(--color-background-primary);
         cursor: pointer;
 
         .header-icon-light {
@@ -94,14 +94,14 @@
         height: size(36);
         position: relative;
         cursor: pointer;
-        background-color: $color-background-primary;
+        background-color: var(--color-background-primary);
 
         .humburger-item {
           display: block;
           position: absolute;
           height: size(4);
           width: 100%;
-          background: $color-text-primary;
+          background: var(--color-text-primary);
           border-radius: 0;
           opacity: 1;
           left: 0;
@@ -109,14 +109,14 @@
           &:first-child {
             height: size(4);
             width: 100%;
-            background: $color-text-primary;
+            background: var(--color-text-primary);
             margin-top: size(14);
           }
 
           &:last-child {
             height: size(4);
             width: 100%;
-            background: $color-text-primary;
+            background: var(--color-text-primary);
             margin-top: size(28);
           }
         }
@@ -127,7 +127,7 @@
 
 @include media(">=tablet", "<=desktop") {
   .header {
-    background-color: $color-background-primary;
+    background-color: var(--color-background-primary);
     padding: size(16);
     z-index: 0;
 
@@ -157,7 +157,7 @@
           }
 
           .header-item-link {
-            color: $color-text-primary;
+            color: var(--color-text-primary);
             font-size: $fz-menu-item-ipad-mini;
             font-weight: 500;
           }
@@ -166,7 +166,7 @@
 
       .toggle-theme-button {
         border: 0;
-        background-color: $color-background-primary;
+        background-color: var(--color-background-primary);
         cursor: pointer;
       }
     }
@@ -175,7 +175,7 @@
 
 @include media(">=desktop") {
   .header {
-    background-color: $color-background-primary;
+    background-color: var(--color-background-primary);
     padding: size(16);
 
     .header-content {
@@ -206,7 +206,7 @@
           }
 
           .header-item-link {
-            color: $color-text-primary;
+            color: var(--color-text-primary);
             font-size: $font-size-menu-item;
             font-weight: 500;
           }
@@ -215,7 +215,7 @@
 
       .toggle-theme-button {
         border: 0;
-        background-color: $color-background-primary;
+        background-color: var(--color-background-primary);
         cursor: pointer;
       }
     }

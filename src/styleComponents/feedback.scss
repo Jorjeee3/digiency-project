@@ -12,7 +12,7 @@
     margin-right: size(4);
 
     button {
-      background-color: $color-text-secondary;
+      background-color: var(--color-text-secondary);
       font-size: 0;
       width: size(15);
       height: size(15);
@@ -20,13 +20,13 @@
       transition: all 0.2s ease-out;
 
       &:hover {
-        background-color: $color-accent;
+        background-color: var(--color-accent);
       }
 
       &:focus {
         width: size(49);
         border-radius: 7.5px;
-        background-color: $color-text-primary;
+        background-color: var(--color-text-primary);
       }
     }
   }
@@ -34,7 +34,7 @@
 
 @include media("<=phone") {
   .feedback-section {
-    background-color: $color-background-secondary;
+    background-color: var(--color-background-secondary);
     padding: size(60) 0;
 
     .feedback-content {
@@ -63,12 +63,12 @@
               height: auto;
               padding: size(26) size(12) size(14) size(34);
               text-align: left;
-              background-color: $color-accent;
+              background-color: var(--color-accent);
               display: flex;
               margin: 0 auto;
               flex-direction: column;
               justify-content: center;
-              color: $color-background-primary;
+              color: var(--color-background-primary);
               position: relative;
 
               .feedback-image {
@@ -81,17 +81,20 @@
 
               .feedback-name {
                 font-size: $font-size-menu-item;
+                color: #fff;
                 font-weight: 500;
                 margin-bottom: size(10);
               }
 
               .feedback-profession {
                 font-size: $font-size-paragraph-text;
+                color: #fff;
                 font-weight: 400;
                 margin-bottom: size(14);
               }
               .feedback-comment {
                 font-size: $font-size-paragraph-text;
+                color: #fff;
                 font-weight: 400;
               }
             }
@@ -108,7 +111,7 @@
 
 @include media(">=phone", "<=tablet") {
   .feedback-section {
-    background-color: $color-background-secondary;
+    background-color: var(--color-background-secondary);
     padding: size(60) 0;
 
     .feedback-content {
@@ -139,12 +142,12 @@
               height: auto;
               padding: size(26) size(32) size(14) size(34);
               text-align: left;
-              background-color: $color-accent;
+              background-color: var(--color-accent);
               display: flex;
               flex-direction: column;
               justify-content: center;
               margin: 0 auto;
-              color: $color-background-primary;
+              color: var(--color-background-primary);
               position: relative;
 
               .feedback-image {
@@ -157,17 +160,20 @@
 
               .feedback-name {
                 font-size: $font-size-menu-item;
+                color: #fff;
                 font-weight: 500;
                 margin-bottom: size(10);
               }
 
               .feedback-profession {
                 font-size: $font-size-paragraph-text;
+                color: #fff;
                 font-weight: 400;
                 margin-bottom: size(14);
               }
               .feedback-comment {
                 font-size: $font-size-paragraph-text;
+                color: #fff;
                 font-weight: 400;
               }
             }
@@ -180,7 +186,7 @@
 
 @include media(">=tablet", "<=desktop") {
   .feedback-section {
-    background-color: $color-background-secondary;
+    background-color: var(--color-background-secondary);
     padding: size(60) 0;
 
     .feedback-content {
@@ -209,12 +215,12 @@
               height: auto;
               padding: size(34) size(34) size(34) size(65);
               text-align: left;
-              background-color: $color-accent;
+              background-color: var(--color-accent);
               display: flex;
               flex-direction: column;
               justify-content: center;
               margin: 0 size(60);
-              color: $color-background-primary;
+              color: var(--color-background-primary);
               position: relative;
 
               .feedback-image {
@@ -227,17 +233,20 @@
 
               .feedback-name {
                 font-size: $fz-title-ipad-mini;
+                color: #fff;
                 font-weight: 500;
                 margin-bottom: size(8);
               }
 
               .feedback-profession {
                 font-size: $font-size-paragraph-text;
+                color: #fff;
                 font-weight: 400;
                 margin-bottom: size(22);
               }
               .feedback-comment {
                 font-size: $font-size-paragraph-text;
+                color: #fff;
                 font-weight: 400;
               }
             }
@@ -250,7 +259,7 @@
 
 @include media(">=desktop") {
   .feedback-section {
-    background-color: $color-background-secondary;
+    background-color: var(--color-background-secondary);
     padding: size(60) 0;
 
     .feedback-content {
@@ -278,12 +287,12 @@
               max-width: size(470);
               padding: size(34) size(34) size(34) size(65);
               text-align: left;
-              background-color: $color-accent;
+              background-color: var(--color-accent);
               display: flex;
               flex-direction: column;
               justify-content: center;
               margin: 0 size(80);
-              color: $color-background-primary;
+              color: var(--color-background-primary);
               position: relative;
 
               .feedback-image {

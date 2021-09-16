@@ -4,9 +4,9 @@
 
 @include media("<=tablet") {
   .footer {
-    background-color: $color-text-primary;
+    background-color: #373737;
     display: block;
-    color: $color-background-primary;
+    color: var(--color-background-primary);
     font-size: $font-size-paragraph-text;
     padding-top: size(50);
 
@@ -26,19 +26,21 @@
           display: block;
           margin-bottom: size(18);
           line-height: size(22);
+          color: #fff;
         }
 
         .footer-title {
           font-size: $fs-title-phone-desktop;
           margin-bottom: size(18);
           font-weight: 600;
+          color: #fff;
         }
 
         .footer-media-list {
           display: flex;
 
           .footer-media-item {
-            background-color: $color-background-primary;
+            background-color: var(--color-background-primary);
             position: relative;
             width: size(40);
             height: size(40);
@@ -67,7 +69,7 @@
               margin-bottom: size(10);
 
               .company-item-link {
-                color: $color-background-primary;
+                color: #fff;
               }
             }
           }
@@ -79,7 +81,7 @@
               margin-bottom: size(10);
 
               .services-item-link {
-                color: $color-background-primary;
+                color: #fff;
               }
             }
           }
@@ -87,6 +89,7 @@
 
         .footer-newsletter-text {
           display: block;
+          color: #fff;
           margin-bottom: size(18);
           line-height: size(22);
         }
@@ -98,22 +101,21 @@
           .newsletter-input {
             padding: size(18);
             display: inline-block;
-            background-color: $color-text-primary;
-            color: $color-text-secondary;
+            background-color: var(--color-text-primary);
+            color: var(--color-text-secondary);
             width: 80%;
             height: size(60);
-            border: size(1) solid $color-accent;
+            border: size(1) solid var(--color-accent);
           }
 
           .newsletter-button {
-            background-color: $color-accent;
+            background-color: var(--color-accent);
             display: inline-block;
             width: 20%;
             height: size(60);
             position: relative;
 
             .newsletter-icon {
-              // width: size(100);
               position: absolute;
               top: 50%;
               left: 50%;
@@ -125,9 +127,10 @@
     }
 
     .under-footer {
-      background-color: $color-accent;
+      background-color: var(--color-accent);
       padding: size(18) size(6);
       text-align: center;
+      color: #fff;
 
       .arrow-top-button {
         display: none;
@@ -138,9 +141,9 @@
 
 @include media(">=tablet", "<=desktop") {
   .footer {
-    background-color: $color-text-primary;
+    background-color: #373737;
     display: block;
-    color: $color-background-primary;
+    color: var(--color-background-primary);
     font-size: $font-size-paragraph-text;
     padding-top: size(50);
 
@@ -163,6 +166,7 @@
           display: block;
           margin-bottom: size(18);
           line-height: size(22);
+          color: #fff;
 
           white-space: nowrap;
           overflow: hidden;
@@ -173,6 +177,7 @@
           font-size: $fz-title-ipad-mini;
           margin-bottom: size(18);
           font-weight: 600;
+          color: #fff;
 
           &:last-child {
             display: block;
@@ -184,7 +189,8 @@
           display: flex;
 
           .footer-media-item {
-            background-color: $color-background-primary;
+            background-color: var(--color-background-primary);
+            color: #fff;
             position: relative;
             width: size(30);
             height: size(30);
@@ -213,7 +219,7 @@
               margin-bottom: size(6);
 
               .company-item-link {
-                color: $color-background-primary;
+                color: #fff;
               }
             }
           }
@@ -225,7 +231,7 @@
               margin-bottom: size(6);
 
               .services-item-link {
-                color: $color-background-primary;
+                color: #fff;
               }
             }
           }
@@ -235,6 +241,7 @@
           display: block;
           margin-bottom: size(10);
           line-height: size(22);
+          color: #fff;
         }
 
         .newsletter-form {
@@ -244,22 +251,21 @@
           .newsletter-input {
             padding: size(18);
             display: inline-block;
-            background-color: $color-text-primary;
-            color: $color-text-secondary;
+            background-color: var(--color-text-primary);
+            color: var(--color-text-secondary);
             width: 80%;
             height: size(40);
-            border: size(1) solid $color-accent;
+            border: size(1) solid var(--color-accent);
           }
 
           .newsletter-button {
-            background-color: $color-accent;
+            background-color: var(--color-accent);
             display: inline-block;
             width: 20%;
             height: size(40);
             position: relative;
 
             .newsletter-icon {
-              // width: size(80);
               position: absolute;
               top: 50%;
               left: 50%;
@@ -271,9 +277,10 @@
     }
 
     .under-footer {
-      background-color: $color-accent;
+      background-color: var(--color-accent);
       padding: size(18) 0;
       text-align: center;
+      color: #fff;
 
       .arrow-top-button {
         display: none;
@@ -284,9 +291,9 @@
 
 @include media(">=desktop") {
   .footer {
-    background-color: $color-text-primary;
+    background-color: #373737;
     display: block;
-    color: $color-background-primary;
+    color: var(--color-background-primary);
     font-size: $font-size-paragraph-text;
 
     .footer-list {
@@ -307,12 +314,14 @@
           display: block;
           margin-bottom: size(12);
           line-height: size(22);
+          color: #fff;
         }
 
         .footer-title {
           font-size: $fs-title-phone-desktop;
           margin-bottom: size(28);
           font-weight: 600;
+          color: #fff;
 
           &:last-child {
             display: block;
@@ -324,7 +333,7 @@
           display: flex;
 
           .footer-media-item {
-            background-color: $color-background-primary;
+            background-color: var(--color-background-primary);
             position: relative;
             width: size(40);
             height: size(40);
@@ -353,7 +362,7 @@
               margin-bottom: size(12);
 
               .company-item-link {
-                color: $color-background-primary;
+                color: #fff;
               }
             }
           }
@@ -365,7 +374,7 @@
               margin-bottom: size(12);
 
               .services-item-link {
-                color: $color-background-primary;
+                color: #fff;
               }
             }
           }
@@ -375,6 +384,7 @@
           display: block;
           margin-bottom: size(16);
           line-height: size(22);
+          color: #fff;
         }
 
         .newsletter-form {
@@ -384,15 +394,15 @@
           .newsletter-input {
             padding: size(18);
             display: inline-block;
-            background-color: $color-text-primary;
-            color: $color-text-secondary;
+            background-color: var(--color-text-primary);
+            color: var(--color-text-secondary);
             width: 80%;
             height: size(60);
-            border: size(1) solid $color-accent;
+            border: size(1) solid var(--color-accent);
           }
 
           .newsletter-button {
-            background-color: $color-accent;
+            background-color: var(--color-accent);
             display: inline-block;
             width: 20%;
             height: size(60);
@@ -411,17 +421,18 @@
     }
 
     .under-footer {
-      background-color: $color-accent;
+      background-color: var(--color-accent);
       padding: size(18) 0;
 
       .under-footer-content {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        color: #fff;
 
         .arrow-top-button {
           display: block;
-          background-color: $color-accent;
+          background-color: var(--color-accent);
 
           .arrow-top-icon {
             width: size(120);

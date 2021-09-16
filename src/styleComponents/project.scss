@@ -22,19 +22,19 @@
         margin-bottom: size(50);
 
         .project-button-tab {
-          background-color: $color-background-primary;
+          background-color: var(--color-background-default);
           padding: 0;
 
           .project-tab {
             font-size: $font-size-title-three;
-            color: $color-text-secondary;
+            color: var(--color-text-secondary);
             font-weight: 400;
           }
 
           &:hover {
             .project-tab {
               font-size: $font-size-title-three;
-              color: $color-accent;
+              color: var(--color-accent);
               font-weight: 400;
             }
           }
@@ -64,7 +64,7 @@
             top: 0;
             left: 0;
             z-index: 10;
-            color: $color-background-primary;
+            color: var(--color-background-primary);
 
             .project-item-title {
               font-weight: 500;
@@ -80,7 +80,7 @@
             }
 
             &:hover {
-              background-color: $color-accent;
+              background-color: var(--color-accent);
 
               .project-item-title {
                 font-weight: 500;
@@ -127,18 +127,18 @@
         margin-bottom: size(60);
 
         .project-button-tab {
-          background-color: $color-background-primary;
+          background-color: var(--color-background-default);
 
           .project-tab {
             font-size: $font-size-button;
-            color: $color-text-secondary;
+            color: var(--color-text-secondary);
             font-weight: 500;
           }
 
           &:hover {
             .project-tab {
               font-size: $font-size-button;
-              color: $color-accent;
+              color: var(--color-accent);
               font-weight: 500;
             }
           }
@@ -168,7 +168,7 @@
             top: 0;
             left: 0;
             z-index: 10;
-            color: $color-background-primary;
+            color: var(--color-background-primary);
 
             .project-item-title {
               font-weight: 500;
@@ -184,7 +184,7 @@
             }
 
             &:hover {
-              background-color: $color-accent;
+              background-color: var(--color-accent);
 
               .project-item-title {
                 font-weight: 500;
@@ -231,18 +231,18 @@
         margin-bottom: size(60);
 
         .project-button-tab {
-          background-color: $color-background-primary;
+          background-color: var(--color-background-default);
 
           .project-tab {
             font-size: $font-size-button;
-            color: $color-text-secondary;
+            color: var(--color-text-secondary);
             font-weight: 500;
           }
 
           &:hover {
             .project-tab {
               font-size: $font-size-button;
-              color: $color-accent;
+              color: var(--color-accent);
               font-weight: 500;
             }
           }
@@ -272,7 +272,7 @@
             top: 0;
             left: 0;
             z-index: 10;
-            color: $color-background-primary;
+            color: var(--color-background-primary);
 
             .project-item-title {
               font-weight: 500;
@@ -288,7 +288,7 @@
             }
 
             &:hover {
-              background-color: $color-accent;
+              background-color: var(--color-accent);
 
               .project-item-title {
                 font-weight: 500;

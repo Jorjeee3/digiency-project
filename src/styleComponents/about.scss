@@ -4,7 +4,7 @@
 
 @include media("<=tablet") {
   .about-section {
-    background-color: $color-background-primary;
+    background-color: var(--color-background-default);
     padding: size(50) size(16);
 
     .about-image {
@@ -33,7 +33,7 @@
         font-size: $font-size-paragraph-text;
         display: block;
         margin-bottom: size(24);
-        color: $color-text-secondary;
+        color: var(--color-text-primary);
         line-height: (1.6);
       }
 
@@ -52,6 +52,7 @@
         padding: size(25) size(20) 0;
         display: inline-block;
         text-align: center;
+        background-color: var(--color-background-primary);
         width: 100%;
         max-width: size(342);
         height: size(200);
@@ -62,7 +63,7 @@
           width: size(70);
           height: size(70);
           margin-bottom: size(36);
-          background-color: $color-text-secondary;
+          background-color: #7B7B7B;
           border: 0;
           border-radius: 50%;
         }
@@ -70,7 +71,7 @@
         .about-item-text {
           display: block;
           font-size: $fs-item-phone;
-          color: $color-text-primary;
+          color: var(--color-text-primary);
         }
       }
     }
@@ -79,7 +80,7 @@
 
 @include media(">=tablet", "<=desktop") {
   .about-section {
-    background-color: $color-background-primary;
+    background-color: var(--color-background-default);
     padding: size(120) size(16);
 
     .about-wrapper {
@@ -115,7 +116,7 @@
           font-size: $font-size-paragraph-text;
           display: block;
           margin-bottom: size(24);
-          color: $color-text-secondary;
+          color: var(--color-text-primary);
           line-height: (1.6);
         }
       }
@@ -130,6 +131,7 @@
         display: inline-block;
         text-align: center;
         width: 22%;
+        background-color: var(--color-background-primary);
         height: size(200);
         margin-bottom: size(24);
         box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
@@ -138,7 +140,7 @@
           width: size(50);
           height: size(50);
           margin-bottom: size(22);
-          background-color: $color-text-secondary;
+          background-color: #7B7B7B;
           border: 0;
           border-radius: 50%;
         }
@@ -146,7 +148,7 @@
         .about-item-text {
           display: block;
           font-size: $font-size-title-three;
-          color: $color-text-primary;
+          color: var(--color-text-primary);
           line-height: size(26);
         }
       }
@@ -156,7 +158,7 @@
 
 @include media(">=desktop") {
   .about-section {
-    background-color: $color-background-primary;
+    background-color: var(--color-background-default);
     padding: size(120) size(16);
 
     .about-wrapper {
@@ -192,7 +194,7 @@
           font-size: $font-size-paragraph-text;
           display: block;
           margin-bottom: size(38);
-          color: $color-text-secondary;
+          color: var(--color-text-primary);
           line-height: (1.6);
         }
       }
@@ -207,6 +209,7 @@
         display: inline-block;
         text-align: center;
         width: 22%;
+        background-color: var(--color-background-primary);
         height: size(200);
         margin-bottom: size(24);
         box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
@@ -214,8 +217,9 @@
         .about-item-button {
           width: size(70);
           height: size(70);
+          background-color: #7B7B7B;
           margin-bottom: size(36);
-          background-color: $color-text-secondary;
+          background-color: var(--color-text-secondary);
           border: 0;
           border-radius: 50%;
         }
@@ -223,7 +227,7 @@
         .about-item-text {
           display: block;
           font-size: $font-size-title-three;
-          color: $color-text-primary;
+          color: var(--color-text-primary);
         }
       }
     }

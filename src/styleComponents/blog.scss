@@ -32,6 +32,7 @@
               max-width: size(300);
               height: auto;
               margin: 0 auto;
+              background-color: var(--color-background-primary);
               box-shadow: 0 0 size(10) 0 rgba(34, 60, 80, 0.2);
               padding: size(18);
 
@@ -43,7 +44,7 @@
                 .blog-item-title {
                   font-size: $fs-title-phone;
                   font-weight: 400;
-                  color: $color-accent;
+                  color: var(--color-accent);
                   margin-bottom: size(18);
                 }
 
@@ -51,7 +52,7 @@
                   font-size: $font-size-paragraph-text;
                   font-weight: 500;
                   margin: 0 0 size(20);
-                  color: $color-text-primary;
+                  color: var(--color-text-primary);
                 }
               }
 
@@ -83,13 +84,13 @@
                     font-weight: 500;
                     display: block;
                     margin-bottom: size(6);
-                    color: $color-text-primary;
+                    color: var(--color-text-primary);
                   }
 
                   .date-person-post {
                     display: inline-block;
                     font-size: $fs-title-phone;
-                    color: $color-text-secondary;
+                    color: var(--color-text-secondary);
                     margin-right: size(6);
                     font-weight: 400;
                   }
@@ -97,7 +98,7 @@
                   .time-to-read {
                     display: inline-block;
                     font-size: $fs-title-phone;
-                    color: $color-text-secondary;
+                    color: var(--color-text-secondary);
                     font-weight: 400;
 
                     &::before {
@@ -108,7 +109,7 @@
                       border-radius: 50%;
                       margin-bottom: size(3);
                       height: size(5);
-                      background-color: $color-text-secondary;
+                      background-color: var(--color-text-secondary);
                     }
                   }
                 }
@@ -151,6 +152,7 @@
               max-width: size(300);
               height: auto;
               margin: 0 auto;
+              background-color: var(--color-background-primary);
               box-shadow: 0 0 size(10) 0 rgba(34, 60, 80, 0.2);
               padding: size(18);
 
@@ -162,7 +164,7 @@
                 .blog-item-title {
                   font-size: $font-size-title-three;
                   font-weight: 400;
-                  color: $color-accent;
+                  color: var(--color-accent);
                   margin-bottom: size(18);
                 }
 
@@ -170,7 +172,7 @@
                   font-size: $font-size-menu-item;
                   font-weight: 500;
                   margin: 0 0 size(20);
-                  color: $color-text-primary;
+                  color: var(--color-text-primary);
                 }
               }
 
@@ -202,13 +204,13 @@
                     font-weight: 500;
                     display: block;
                     margin-bottom: size(6);
-                    color: $color-text-primary;
+                    color: var(--color-text-primary);
                   }
 
                   .date-person-post {
                     display: inline-block;
                     font-size: $fs-title-phone;
-                    color: $color-text-secondary;
+                    color: var(--color-text-secondary);
                     margin-right: size(6);
                     font-weight: 400;
                   }
@@ -216,7 +218,7 @@
                   .time-to-read {
                     display: inline-block;
                     font-size: $fs-title-phone;
-                    color: $color-text-secondary;
+                    color: var(--color-text-secondary);
                     font-weight: 400;
 
                     &::before {
@@ -227,7 +229,7 @@
                       border-radius: 50%;
                       margin-bottom: size(3);
                       height: size(5);
-                      background-color: $color-text-secondary;
+                      background-color: var(--color-text-secondary);
                     }
                   }
                 }
@@ -269,6 +271,7 @@
               width: 100%;
               max-width: size(332);
               height: auto;
+              background-color: var(--color-background-primary);
               box-shadow: 0 0 size(10) 0 rgba(34, 60, 80, 0.2);
               padding: size(18);
 
@@ -280,7 +283,7 @@
                 .blog-item-title {
                   font-size: $font-size-title-three;
                   font-weight: 400;
-                  color: $color-accent;
+                  color: var(--color-accent);
                   margin-bottom: size(18);
                 }
 
@@ -288,7 +291,7 @@
                   font-size: $font-size-menu-item;
                   font-weight: 500;
                   margin: 0 0 size(20);
-                  color: $color-text-primary;
+                  color: var(--color-text-primary);
                 }
               }
 
@@ -320,13 +323,13 @@
                     font-weight: 500;
                     display: block;
                     margin-bottom: size(6);
-                    color: $color-text-primary;
+                    color: var(--color-text-primary);
                   }
 
                   .date-person-post {
                     display: inline-block;
                     font-size: $fs-title-phone;
-                    color: $color-text-secondary;
+                    color: var(--color-text-secondary);
                     margin-right: size(6);
                     font-weight: 400;
                   }
@@ -334,7 +337,7 @@
                   .time-to-read {
                     display: inline-block;
                     font-size: $fs-title-phone;
-                    color: $color-text-secondary;
+                    color: var(--color-text-secondary);
                     font-weight: 400;
 
                     &::before {
@@ -345,7 +348,7 @@
                       border-radius: 50%;
                       margin-bottom: size(3);
                       height: size(5);
-                      background-color: $color-text-secondary;
+                      background-color: var(--color-text-secondary);
                     }
                   }
                 }
@@ -395,7 +398,7 @@
                 .blog-item-title {
                   font-size: $font-size-title-three;
                   font-weight: 400;
-                  color: $color-accent;
+                  color: var(--color-accent);
                   margin-bottom: size(18);
                 }
 
@@ -403,7 +406,7 @@
                   font-size: $fz-title-ipad-mini;
                   font-weight: 500;
                   margin: 0 0 size(28);
-                  color: $color-text-primary;
+                  color: var(--color-text-primary);
                 }
               }
 
@@ -434,13 +437,13 @@
                     font-weight: 500;
                     display: block;
                     margin-bottom: size(6);
-                    color: $color-text-primary;
+                    color: var(--color-text-primary);
                   }
 
                   .date-person-post {
                     display: inline-block;
                     font-size: $font-size-paragraph-text;
-                    color: $color-text-secondary;
+                    color: var(--color-text-secondary);
                     margin-right: size(6);
                     font-weight: 400;
                   }
@@ -448,7 +451,7 @@
                   .time-to-read {
                     display: inline-block;
                     font-size: $font-size-paragraph-text;
-                    color: $color-text-secondary;
+                    color: var(--color-text-secondary);
                     font-weight: 400;
 
                     &::before {
@@ -459,7 +462,7 @@
                       border-radius: 50%;
                       margin-bottom: size(3);
                       height: size(5);
-                      background-color: $color-text-secondary;
+                      background-color: var(--color-text-secondary);
                     }
                   }
                 }
