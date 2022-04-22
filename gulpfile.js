@@ -5,7 +5,6 @@ const cssnano = require('cssnano');
 const terser = require('gulp-terser');
 const browsersync = require('browser-sync').create();
 let gulp = require('gulp'); 
-// let svgSprite = require('gulp-svg-sprite');
 
 // Sass Task
 function scssTask(){
@@ -43,13 +42,8 @@ function browsersyncReload() {
 function watchTask(){
   watch('*.html', browsersyncReload)
   watch(['src/scss/**/*.scss', 'src/js/**/*.js', 'src/styleComponents/**/*.scss'], series(scssTask, jsTask, browsersyncReload))
-  // gulp.watch('*.html', browsersync.reload);
-  // gulp.watch('*.dist/style.css').on('change', browsersync.reload) 
-  // gulp.watch('*.dist/style.css', browsersync.reload);
-  // gulp.watch(['src/scss/**/*.scss','src/styleComponents/**/*.scss', 'src/js/**/*.js', 'static/icons/*.svg'], series(scssTask, jsTask, browsersync.reload));
 }
 
-// Default Gulp task
 exports.default = series(
   scssTask,
   jsTask,
