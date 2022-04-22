@@ -30,6 +30,7 @@ body {
   --color-background-default: #fff;
   
   --color-accent: #ff5300;
+  --color-accent-hover: rgb(255, 83, 0, 0.7);
 
   background-color: var(--color-background-default);
 }
@@ -50,6 +51,11 @@ body {
 
 h1,h2,h3,h4 {
   color: var(--color-text-primary);
+}
+
+ul, li {
+  list-style: none;
+  padding: 0;
 }
 
 .container {
@@ -76,4 +82,12 @@ h1,h2,h3,h4 {
 
 .main-title-words {
   color: var(--color-accent);
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: 0;
 }

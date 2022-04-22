@@ -66,6 +66,22 @@
                   width: size(40);
                   height: size(40);
                   margin-bottom: size(5);
+                  position: relative;
+
+                  .persom-media-link {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                  }
+  
+                  &:hover {
+                    .persom-media-link {
+                      .persom-media-link-icon {
+                        background-color: rgb(255, 255, 255);
+                      }
+                    }
+                  }
                 }
               }
               &:hover {
@@ -136,6 +152,22 @@
                 width: size(40);
                 height: size(40);
                 margin-bottom: size(5);
+                position: relative;
+
+                .persom-media-link {
+                  position: absolute;
+                  top: 50%;
+                  left: 50%;
+                  transform: translate(-50%, -50%);
+                }
+
+                &:hover {
+                  .persom-media-link {
+                    .persom-media-link-icon {
+                      background-color: rgb(255, 255, 255);
+                    }
+                  }
+                }
               }
             }
 
@@ -206,6 +238,22 @@
                 width: size(40);
                 height: size(40);
                 margin-bottom: size(5);
+                position: relative;
+
+                .persom-media-link {
+                  position: absolute;
+                  top: 50%;
+                  left: 50%;
+                  transform: translate(-50%, -50%);
+                }
+
+                &:hover {
+                  .persom-media-link {
+                    .persom-media-link-icon {
+                      background-color: rgb(255, 255, 255);
+                    }
+                  }
+                }
               }
             }
             &:hover {

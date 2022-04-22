@@ -24,6 +24,7 @@
         .project-button-tab {
           background-color: var(--color-background-default);
           padding: 0;
+          border: 0;
 
           .project-tab {
             font-size: $font-size-title-three;
@@ -60,24 +61,28 @@
             width: 100%;
             height: 100%;
             position: absolute;
-            padding-top: size(112);
+            // padding-top: size(112);
             top: 0;
             left: 0;
             z-index: 10;
             color: var(--color-background-primary);
 
-            .project-item-title {
-              font-weight: 500;
-              font-size: $fz-title-ipad-mini;
-              opacity: 0;
-              margin-bottom: size(18);
+            .wrapper-project-content {
+              .project-item-title {
+                font-weight: 500;
+                font-size: $fz-title-ipad-mini;
+                opacity: 0;
+                margin-bottom: size(18);
+              }
+  
+              .project-item-product {
+                font-weight: 400;
+                font-size: $font-size-title-three;
+                opacity: 0;
+              }
+
             }
 
-            .project-item-product {
-              font-weight: 400;
-              font-size: $font-size-title-three;
-              opacity: 0;
-            }
 
             &:hover {
               background-color: var(--color-accent);
@@ -128,6 +133,7 @@
 
         .project-button-tab {
           background-color: var(--color-background-default);
+          border: 0;
 
           .project-tab {
             font-size: $font-size-button;
@@ -164,23 +170,29 @@
             width: 100%;
             height: 100%;
             position: absolute;
-            padding-top: size(112);
             top: 0;
             left: 0;
             z-index: 10;
             color: var(--color-background-primary);
 
-            .project-item-title {
-              font-weight: 500;
-              font-size: $fz-title-ipad-mini;
-              opacity: 0;
-              margin-bottom: size(18);
-            }
+            .wparre-rpoject-content {
+              position: absolute;
+              top: 50%;
+              left: 28%;
 
-            .project-item-product {
-              font-weight: 400;
-              font-size: $font-size-title-three;
-              opacity: 0;
+              .project-item-title {
+                font-weight: 500;
+                font-size: $fz-title-ipad-mini;
+                opacity: 0;
+                color: aliceblue;
+                margin-bottom: size(18);
+              }
+  
+              .project-item-product {
+                font-weight: 400;
+                font-size: $font-size-title-three;
+                opacity: 0;
+              }
             }
 
             &:hover {
@@ -232,6 +244,7 @@
 
         .project-button-tab {
           background-color: var(--color-background-default);
+          border: 0;
 
           .project-tab {
             font-size: $font-size-button;
@@ -268,32 +281,39 @@
             width: 100%;
             height: 100%;
             position: absolute;
-            padding-top: size(250);
-            top: 0;
-            left: 0;
+            top: 50%;
+            left: 50%;
             z-index: 10;
+            transform: translate(-50%, -50%);
             color: var(--color-background-primary);
 
-            .project-item-title {
-              font-weight: 500;
-              font-size: $fz-title-ipad-mini;
-              opacity: 0;
-              margin-bottom: size(18);
-            }
+            .wrapper-project-content {
+              position: absolute;
+              top: 50%;
+              left: 28%;
 
-            .project-item-product {
-              font-weight: 400;
-              font-size: $font-size-title-three;
-              opacity: 0;
+              .project-item-title {
+                font-weight: 500;
+                font-size: $fz-title-ipad-mini;
+                opacity: 0;
+                margin-bottom: size(18);
+              }
+  
+              .project-item-product {
+                font-weight: 400;
+                font-size: $font-size-title-three;
+                opacity: 0;
+              }
             }
 
             &:hover {
-              background-color: var(--color-accent);
+              background-color: var(--color-accent-hover);
 
               .project-item-title {
                 font-weight: 500;
                 font-size: $fz-title-ipad-mini;
                 opacity: 1;
+                color: aliceblue;
               }
 
               .project-item-product {

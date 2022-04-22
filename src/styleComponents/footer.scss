@@ -8,10 +8,9 @@
     display: block;
     color: var(--color-background-primary);
     font-size: $font-size-paragraph-text;
-    padding-top: size(50);
 
     .footer-list {
-      padding: size(18);
+      padding: size(16) size(5) 0;
 
       .footer-item {
         display: block;
@@ -114,12 +113,16 @@
             width: 20%;
             height: size(60);
             position: relative;
+            border: 0;
 
             .newsletter-icon {
               position: absolute;
               top: 50%;
               left: 50%;
               transform: translate(-50%, -50%);
+              width: size(30);
+              height: size(30);
+              border: 0;
             }
           }
         }
@@ -145,10 +148,9 @@
     display: block;
     color: var(--color-background-primary);
     font-size: $font-size-paragraph-text;
-    padding-top: size(50);
 
     .footer-list {
-      padding: size(16);
+      padding: size(16) size(5) 0;
       display: flex;
 
       .footer-item {
@@ -264,12 +266,16 @@
             width: 20%;
             height: size(40);
             position: relative;
+            border: 0;
 
             .newsletter-icon {
               position: absolute;
               top: 50%;
               left: 50%;
               transform: translate(-50%, -50%);
+              width: size(20);
+              height: size(20);
+              border: 0;
             }
           }
         }
@@ -297,7 +303,7 @@
     font-size: $font-size-paragraph-text;
 
     .footer-list {
-      padding: size(60) 0;
+      padding: size(16) size(5) 0;
       display: flex;
 
       .footer-item {
@@ -407,13 +413,15 @@
             width: 20%;
             height: size(60);
             position: relative;
+            border: 0;
 
             .newsletter-icon {
-              // width: size(100);
               position: absolute;
               top: 50%;
               left: 50%;
               transform: translate(-50%, -50%);
+              width: size(24);
+              height: size(24);
             }
           }
         }
@@ -422,7 +430,7 @@
 
     .under-footer {
       background-color: var(--color-accent);
-      padding: size(18) 0;
+      padding: size(18) size(14) ;
 
       .under-footer-content {
         display: flex;
@@ -435,7 +443,7 @@
           background-color: var(--color-accent);
 
           .arrow-top-icon {
-            width: size(120);
+            width: size(20);
             transform: translate(40%, 0);
           }
         }

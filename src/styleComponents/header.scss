@@ -51,6 +51,7 @@
             font-size: $font-size-menu-item;
             font-weight: 500;
             border-bottom: size(2) solid #857777;
+            text-decoration: none;
           }
         }
       }
@@ -183,6 +184,7 @@
       justify-content: space-between;
       align-items: center;
       position: relative;
+      // background-color: rgb(222, 5, 5);
 
       .header-logo {
         width: size(162);
@@ -195,6 +197,7 @@
 
         .header-nav-list {
           height: 100%;
+          margin-top: 0;
 
           .header-list-item {
             display: inline-block;
@@ -209,6 +212,7 @@
             color: var(--color-text-primary);
             font-size: $font-size-menu-item;
             font-weight: 500;
+            text-decoration: none;
           }
         }
       }
