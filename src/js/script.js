@@ -1,12 +1,19 @@
 const burgerMenuBtn = document.querySelector('.humburger-menu')
 const headerNav = document.querySelector('.header-nav')
 const toggleThemeButton = document.querySelector('.header-icon-light')
+const headerItemLinks = document.querySelectorAll('.header-item-link')
 const body = document.querySelector('body')
 
 burgerMenuBtn.addEventListener('click', () => {
 	headerNav.classList.toggle('active'),
 	burgerMenuBtn.classList.toggle('open')
 })
+
+
+// headerItemLink.addEventListener('click', () => {
+// 	headerNav.classList.remove('active'),
+// 	burgerMenuBtn.classList.remove('open')
+// })
 
 let number = document.querySelector('.number'),
 	numberTop = number.getBoundingClientRect().top,
@@ -161,6 +168,13 @@ $(document).ready(function () {
 	});
 })
 
+
+headerItemLinks.forEach(headerItemLink => {
+	headerItemLink.addEventListener('click', () => {
+		headerNav.classList.remove('active'),
+		burgerMenuBtn.classList.remove('open')
+	})
+})
 
 toggleThemeButton.addEventListener('click', () => {
 	body.classList.toggle('dark-theme')
